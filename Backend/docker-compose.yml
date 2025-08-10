@@ -1,0 +1,60 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:6.0
+    container_name: mongo
+    restart: always
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  authentication-service:
+    build: ./authentication-service
+    container_name: authentication-service
+    env_file:
+      - ./authentication-service/.env
+    depends_on:
+      - mongo
+      - redis
+      - rabbitmq
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./authentication-service/logs:/app/logs
+    restart: always
+
+  email-service:
+    build: ./email-service
+    container_name: email-service
+    env_file:
+      - ./email-service/.env
+    depends_on:
+      - rabbitmq
+    volumes:
+      - ./email-service/logs:/app/logs
+    restart: always
+
+volumes:
+  mongo_data:

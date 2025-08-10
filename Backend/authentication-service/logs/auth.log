@@ -1,0 +1,93 @@
+2025-08-10T15:26:11.452Z [INFO] Starting authentication service...
+2025-08-10T15:26:11.978Z [INFO] Connected to MongoDB
+2025-08-10T15:26:11.985Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:26:12.525Z [INFO] Starting authentication service...
+2025-08-10T15:26:12.539Z [INFO] Connected to MongoDB
+2025-08-10T15:26:12.546Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:26:13.182Z [INFO] Starting authentication service...
+2025-08-10T15:26:13.196Z [INFO] Connected to MongoDB
+2025-08-10T15:26:13.204Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:26:14.079Z [INFO] Starting authentication service...
+2025-08-10T15:26:14.098Z [INFO] Connected to MongoDB
+2025-08-10T15:26:14.108Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:26:15.348Z [INFO] Starting authentication service...
+2025-08-10T15:26:15.362Z [INFO] Connected to MongoDB
+2025-08-10T15:26:15.372Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:26:17.386Z [INFO] Starting authentication service...
+2025-08-10T15:26:17.398Z [INFO] Connected to MongoDB
+2025-08-10T15:26:17.451Z [INFO] RabbitMQ publisher initialized
+2025-08-10T15:26:17.453Z [INFO] Auth service listening on port 4000
+2025-08-10T15:27:01.477Z [INFO] check-attuid: not found employee mp5704
+2025-08-10T15:27:09.861Z [INFO] check-attuid: found verified user my2474
+2025-08-10T15:28:57.849Z [INFO] login: invalid password my2474
+2025-08-10T15:28:57.851Z [INFO] Set rate limit for login_attempts:my2474: 1 (ttl 900s)
+2025-08-10T15:28:57.851Z [INFO] Incremented failed login attempt for my2474: 1
+2025-08-10T15:29:05.087Z [INFO] login: invalid password my2474
+2025-08-10T15:29:05.089Z [INFO] Set rate limit for login_attempts:my2474: 2 (ttl 893s)
+2025-08-10T15:29:05.089Z [INFO] Incremented failed login attempt for my2474: 2
+2025-08-10T15:29:09.469Z [INFO] login: invalid password my2474
+2025-08-10T15:29:09.470Z [INFO] Set rate limit for login_attempts:my2474: 3 (ttl 889s)
+2025-08-10T15:29:09.470Z [INFO] Incremented failed login attempt for my2474: 3
+2025-08-10T15:29:23.265Z [INFO] login: invalid password my2474
+2025-08-10T15:29:23.267Z [INFO] Set rate limit for login_attempts:my2474: 4 (ttl 875s)
+2025-08-10T15:29:23.267Z [INFO] Incremented failed login attempt for my2474: 4
+2025-08-10T15:29:23.793Z [INFO] login: invalid password my2474
+2025-08-10T15:29:23.794Z [INFO] Set rate limit for login_attempts:my2474: 5 (ttl 874s)
+2025-08-10T15:29:23.794Z [INFO] Incremented failed login attempt for my2474: 5
+2025-08-10T15:29:24.425Z [INFO] Rate limit exceeded for my2474
+2025-08-10T15:29:25.448Z [INFO] Rate limit exceeded for my2474
+2025-08-10T15:29:25.968Z [INFO] Rate limit exceeded for my2474
+2025-08-10T15:35:38.123Z [INFO] Rate limit exceeded for my2474
+2025-08-10T15:35:38.811Z [INFO] Rate limit exceeded for my2474
+2025-08-10T15:35:45.117Z [INFO] login: user not found mp5704
+2025-08-10T15:35:54.465Z [INFO] check-attuid: not found employee mp5704
+2025-08-10T15:41:14.658Z [INFO] Set OTP in Redis for mp5704 (ttl 300s)
+2025-08-10T15:41:14.660Z [INFO] Published email job for attuid=mp5704 email=maheshyadav0170@gmail.com
+2025-08-10T15:41:14.660Z [INFO] check-attuid: OTP sent/published for mp5704
+2025-08-10T15:42:24.665Z [INFO] verify-otp: no otp found for my2474
+2025-08-10T15:42:29.390Z [ERROR] verify-otp error: MongoServerError: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: auth_db.authusers index: email_1 dup key: { email: "maheshyadav0170@gmail.com" }
+2025-08-10T15:48:39.154Z [INFO] verify-otp: no otp found for mp5704
+2025-08-10T15:48:41.326Z [INFO] verify-otp: no otp found for mp5704
+2025-08-10T15:48:42.545Z [INFO] verify-otp: no otp found for mp5704
+2025-08-10T15:48:44.591Z [INFO] verify-otp: no otp found for mp5704
+2025-08-10T15:48:45.292Z [INFO] verify-otp: no otp found for mp5704
+2025-08-10T15:48:49.605Z [INFO] Set OTP in Redis for mp5704 (ttl 300s)
+2025-08-10T15:48:49.606Z [INFO] Published email job for attuid=mp5704 email=maheshyadav0170@gmail.com
+2025-08-10T15:48:49.606Z [INFO] check-attuid: OTP sent/published for mp5704
+2025-08-10T15:48:54.154Z [INFO] verify-otp: invalid otp for mp5704
+2025-08-10T15:49:07.696Z [ERROR] verify-otp error: MongoServerError: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: auth_db.authusers index: email_1 dup key: { email: "maheshyadav0170@gmail.com" }
+2025-08-10T15:50:12.739Z [INFO] Starting authentication service...
+2025-08-10T15:50:13.274Z [INFO] Connected to MongoDB
+2025-08-10T15:50:13.279Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:50:13.847Z [INFO] Starting authentication service...
+2025-08-10T15:50:13.861Z [INFO] Connected to MongoDB
+2025-08-10T15:50:13.869Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:50:14.481Z [INFO] Starting authentication service...
+2025-08-10T15:50:14.499Z [INFO] Connected to MongoDB
+2025-08-10T15:50:14.507Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:50:15.346Z [INFO] Starting authentication service...
+2025-08-10T15:50:15.362Z [INFO] Connected to MongoDB
+2025-08-10T15:50:15.370Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:50:16.575Z [INFO] Starting authentication service...
+2025-08-10T15:50:16.589Z [INFO] Connected to MongoDB
+2025-08-10T15:50:16.597Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:50:18.612Z [INFO] Starting authentication service...
+2025-08-10T15:50:18.624Z [INFO] Connected to MongoDB
+2025-08-10T15:50:18.677Z [INFO] RabbitMQ publisher initialized
+2025-08-10T15:50:18.679Z [INFO] Auth service listening on port 4000
+2025-08-10T15:50:34.126Z [INFO] verify-otp: no otp found for mp5704
+2025-08-10T15:50:37.764Z [INFO] Set OTP in Redis for mp5704 (ttl 300s)
+2025-08-10T15:50:37.766Z [INFO] Published email job for attuid=mp5704 email=maheshyadav0170@gmail.com
+2025-08-10T15:50:37.766Z [INFO] check-attuid: OTP sent/published for mp5704
+2025-08-10T15:50:50.693Z [INFO] check-attuid: not found employee 382186
+2025-08-10T15:50:56.483Z [ERROR] verify-otp error: MongoServerError: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: auth_db.authusers index: email_1 dup key: { email: "maheshyadav0170@gmail.com" }
+2025-08-10T15:53:36.352Z [INFO] verify-otp: no otp found for mp5704
+2025-08-10T15:53:43.639Z [INFO] Set OTP in Redis for mp5704 (ttl 300s)
+2025-08-10T15:53:43.641Z [INFO] Published email job for attuid=mp5704 email=maheshyadav0170@gmail.com
+2025-08-10T15:53:43.641Z [INFO] check-attuid: OTP sent/published for mp5704
+2025-08-10T15:54:02.587Z [INFO] verify-otp: account verified/created for mp5704
+2025-08-10T15:55:21.822Z [INFO] set-password: password set for mp5704
+2025-08-10T15:56:10.659Z [INFO] Reset failed login attempts for mp5704
+2025-08-10T15:56:10.666Z [INFO] login: successful mp5704
+2025-08-10T15:56:50.268Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJtcDU3MDQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTQ4NDEzNzAsImV4cCI6MTc1NDg0NDk3MH0.tDU5_5xJbnTpCkUABcnuigMRrmPITb2O7qY4De0xpzQ for 3560s
+2025-08-10T15:56:50.269Z [INFO] logout: token blacklisted

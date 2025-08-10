@@ -1,0 +1,15 @@
+2025-08-10T15:26:11.570Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:26:12.064Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:26:12.709Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:26:13.750Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:26:15.631Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:26:19.144Z [INFO] Email service started and listening for jobs
+2025-08-10T15:41:17.870Z [INFO] Email sent to maheshyadav0170@gmail.com for mp5704
+2025-08-10T15:48:52.426Z [INFO] Email sent to maheshyadav0170@gmail.com for mp5704
+2025-08-10T15:50:12.872Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:50:13.327Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:50:13.971Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:50:16.852Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-10T15:50:20.349Z [INFO] Email service started and listening for jobs
+2025-08-10T15:50:40.871Z [INFO] Email sent to maheshyadav0170@gmail.com for mp5704
+2025-08-10T15:53:46.524Z [INFO] Email sent to maheshyadav0170@gmail.com for mp5704
