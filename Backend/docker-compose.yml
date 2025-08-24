@@ -56,5 +56,20 @@ services:
       - ./email-service/logs:/app/logs
     restart: always
 
+  notification-service:
+    build: ./notification-service
+    container_name: notification-service
+    env_file:
+      - ./notification-service/.env
+    depends_on:
+      - mongo
+      - redis
+      - rabbitmq
+    ports:
+      - "4001:4001"
+    volumes:
+      - ./notification-service/logs:/app/logs
+    restart: always
+
 volumes:
   mongo_data:

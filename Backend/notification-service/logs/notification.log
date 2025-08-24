@@ -1,0 +1,13 @@
+2025-08-24T10:42:12.522Z [INFO] Connected to MongoDB (notification-service)
+2025-08-24T10:42:12.525Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:42:13.113Z [INFO] Connected to MongoDB (notification-service)
+2025-08-24T10:42:13.119Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:42:13.769Z [INFO] Connected to MongoDB (notification-service)
+2025-08-24T10:42:13.772Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:42:14.605Z [INFO] Connected to MongoDB (notification-service)
+2025-08-24T10:42:14.614Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:42:15.807Z [INFO] Connected to MongoDB (notification-service)
+2025-08-24T10:42:15.812Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:42:17.828Z [INFO] Connected to MongoDB (notification-service)
+2025-08-24T10:42:17.884Z [INFO] Notification API running on port 4001
+2025-08-24T10:49:52.045Z [INFO] Notification stored for EMP001: Wellness Break Reminder

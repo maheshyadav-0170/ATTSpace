@@ -5,7 +5,7 @@ const helmet = require('helmet');
 const cors = require('cors');
 const authRoutes = require('./routes/auth');
 const { mongoUri, mongoDb, port } = require('./config');
-const { initRedis } = require('./services/otpService');
+const { initRedis } = require('./services/helperService');
 const { initRabbit } = require('./services/rabbitmqPublisher');
 const logger = require('./utils/logger');
 

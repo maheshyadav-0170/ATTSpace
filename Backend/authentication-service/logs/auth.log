@@ -91,3 +91,582 @@
 2025-08-10T15:56:10.666Z [INFO] login: successful mp5704
 2025-08-10T15:56:50.268Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJtcDU3MDQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTQ4NDEzNzAsImV4cCI6MTc1NDg0NDk3MH0.tDU5_5xJbnTpCkUABcnuigMRrmPITb2O7qY4De0xpzQ for 3560s
 2025-08-10T15:56:50.269Z [INFO] logout: token blacklisted
+2025-08-12T17:43:05.034Z [INFO] Starting authentication service...
+2025-08-12T17:43:05.052Z [INFO] Connected to MongoDB
+2025-08-12T17:43:05.057Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-12T17:43:05.875Z [INFO] Starting authentication service...
+2025-08-12T17:43:05.896Z [INFO] Connected to MongoDB
+2025-08-12T17:43:05.907Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-12T17:43:06.701Z [INFO] Starting authentication service...
+2025-08-12T17:43:06.717Z [INFO] Connected to MongoDB
+2025-08-12T17:43:06.729Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-12T17:43:07.595Z [INFO] Starting authentication service...
+2025-08-12T17:43:07.610Z [INFO] Connected to MongoDB
+2025-08-12T17:43:07.616Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-12T17:43:08.840Z [INFO] Starting authentication service...
+2025-08-12T17:43:08.855Z [INFO] Connected to MongoDB
+2025-08-12T17:43:08.863Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-12T17:43:10.908Z [INFO] Starting authentication service...
+2025-08-12T17:43:10.923Z [INFO] Connected to MongoDB
+2025-08-12T17:43:10.980Z [INFO] RabbitMQ publisher initialized
+2025-08-12T17:43:10.982Z [INFO] Auth service listening on port 4000
+2025-08-12T17:49:17.310Z [INFO] Starting authentication service...
+2025-08-12T17:49:17.340Z [INFO] Connected to MongoDB
+2025-08-12T17:49:17.349Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T17:49:18.100Z [INFO] Starting authentication service...
+2025-08-12T17:49:18.120Z [INFO] Connected to MongoDB
+2025-08-12T17:49:18.131Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T17:49:18.841Z [INFO] Starting authentication service...
+2025-08-12T17:49:18.865Z [INFO] Connected to MongoDB
+2025-08-12T17:49:18.870Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T17:49:19.806Z [INFO] Starting authentication service...
+2025-08-12T17:49:19.823Z [INFO] Connected to MongoDB
+2025-08-12T17:49:19.839Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T17:49:21.167Z [INFO] Starting authentication service...
+2025-08-12T17:49:21.184Z [INFO] Connected to MongoDB
+2025-08-12T17:49:21.193Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T17:49:23.387Z [INFO] Starting authentication service...
+2025-08-12T17:49:23.405Z [INFO] Connected to MongoDB
+2025-08-12T17:49:23.464Z [INFO] RabbitMQ publisher initialized
+2025-08-12T17:49:23.466Z [INFO] Auth service listening on port 4000
+2025-08-12T17:54:09.283Z [INFO] Starting authentication service...
+2025-08-12T17:54:09.303Z [INFO] Connected to MongoDB
+2025-08-12T17:54:09.410Z [ERROR] Failed to start service: Error: getaddrinfo ENOTFOUND rabbitmq
+2025-08-12T17:54:10.141Z [INFO] Starting authentication service...
+2025-08-12T17:54:10.156Z [INFO] Connected to MongoDB
+2025-08-12T17:54:10.164Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T17:54:10.823Z [INFO] Starting authentication service...
+2025-08-12T17:54:10.837Z [INFO] Connected to MongoDB
+2025-08-12T17:54:10.845Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T17:54:11.680Z [INFO] Starting authentication service...
+2025-08-12T17:54:11.693Z [INFO] Connected to MongoDB
+2025-08-12T17:54:11.700Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T17:54:13.064Z [INFO] Starting authentication service...
+2025-08-12T17:54:13.080Z [INFO] Connected to MongoDB
+2025-08-12T17:54:13.089Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T17:54:15.085Z [INFO] Starting authentication service...
+2025-08-12T17:54:15.098Z [INFO] Connected to MongoDB
+2025-08-12T17:54:15.149Z [INFO] RabbitMQ publisher initialized
+2025-08-12T17:54:15.151Z [INFO] Auth service listening on port 4000
+2025-08-12T18:05:08.433Z [INFO] login: user not found mp5704
+2025-08-12T18:05:13.258Z [INFO] login: user not found my2474
+2025-08-12T18:07:53.665Z [INFO] login: user not found my2474
+2025-08-12T18:07:56.769Z [INFO] login: user not found my2474
+2025-08-12T18:07:57.546Z [INFO] login: user not found my2474
+2025-08-12T18:07:57.913Z [INFO] login: user not found my2474
+2025-08-12T18:07:58.377Z [INFO] login: user not found my2474
+2025-08-12T18:07:58.743Z [INFO] login: user not found my2474
+2025-08-12T18:07:59.208Z [INFO] login: user not found my2474
+2025-08-12T18:07:59.593Z [INFO] login: user not found my2474
+2025-08-12T18:08:00.333Z [INFO] login: user not found my2474
+2025-08-12T18:08:10.387Z [INFO] check-attuid: not found employee mp5704
+2025-08-12T18:08:14.586Z [INFO] Set OTP in Redis for my2474 (ttl 300s)
+2025-08-12T18:08:14.591Z [INFO] Published email job for attuid=my2474 email=maheshyadav0170@gmail.com
+2025-08-12T18:08:14.591Z [INFO] check-attuid: OTP sent/published for my2474
+2025-08-12T18:09:02.406Z [INFO] verify-otp: account verified/created for my2474
+2025-08-12T18:09:16.630Z [INFO] set-password: password set for my2474
+2025-08-12T18:09:28.878Z [INFO] Reset failed login attempts for my2474
+2025-08-12T18:09:28.884Z [INFO] login: successful my2474
+2025-08-12T18:09:46.217Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3582s
+2025-08-12T18:09:46.217Z [INFO] logout: token blacklisted
+2025-08-12T18:09:47.528Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3581s
+2025-08-12T18:09:47.528Z [INFO] logout: token blacklisted
+2025-08-12T18:09:48.158Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3580s
+2025-08-12T18:09:48.158Z [INFO] logout: token blacklisted
+2025-08-12T18:09:48.472Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3580s
+2025-08-12T18:09:48.472Z [INFO] logout: token blacklisted
+2025-08-12T18:09:48.798Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3580s
+2025-08-12T18:09:48.798Z [INFO] logout: token blacklisted
+2025-08-12T18:09:49.107Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3579s
+2025-08-12T18:09:49.107Z [INFO] logout: token blacklisted
+2025-08-12T18:09:49.406Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3579s
+2025-08-12T18:09:49.407Z [INFO] logout: token blacklisted
+2025-08-12T18:09:49.690Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3579s
+2025-08-12T18:09:49.690Z [INFO] logout: token blacklisted
+2025-08-12T18:09:49.956Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3579s
+2025-08-12T18:09:49.957Z [INFO] logout: token blacklisted
+2025-08-12T18:09:50.207Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3578s
+2025-08-12T18:09:50.208Z [INFO] logout: token blacklisted
+2025-08-12T18:09:50.456Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3578s
+2025-08-12T18:09:50.456Z [INFO] logout: token blacklisted
+2025-08-12T18:09:50.724Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3578s
+2025-08-12T18:09:50.724Z [INFO] logout: token blacklisted
+2025-08-12T18:09:51.008Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3577s
+2025-08-12T18:09:51.008Z [INFO] logout: token blacklisted
+2025-08-12T18:09:51.254Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3577s
+2025-08-12T18:09:51.255Z [INFO] logout: token blacklisted
+2025-08-12T18:09:51.500Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3577s
+2025-08-12T18:09:51.501Z [INFO] logout: token blacklisted
+2025-08-12T18:09:51.732Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3577s
+2025-08-12T18:09:51.732Z [INFO] logout: token blacklisted
+2025-08-12T18:09:51.955Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3577s
+2025-08-12T18:09:51.955Z [INFO] logout: token blacklisted
+2025-08-12T18:09:52.191Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3576s
+2025-08-12T18:09:52.191Z [INFO] logout: token blacklisted
+2025-08-12T18:09:52.423Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3576s
+2025-08-12T18:09:52.423Z [INFO] logout: token blacklisted
+2025-08-12T18:09:52.640Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3576s
+2025-08-12T18:09:52.640Z [INFO] logout: token blacklisted
+2025-08-12T18:09:52.856Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3576s
+2025-08-12T18:09:52.856Z [INFO] logout: token blacklisted
+2025-08-12T18:09:53.739Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3575s
+2025-08-12T18:09:53.740Z [INFO] logout: token blacklisted
+2025-08-12T18:09:54.157Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3574s
+2025-08-12T18:09:54.158Z [INFO] logout: token blacklisted
+2025-08-12T18:09:54.439Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3574s
+2025-08-12T18:09:54.439Z [INFO] logout: token blacklisted
+2025-08-12T18:10:06.871Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3562s
+2025-08-12T18:10:06.871Z [INFO] logout: token blacklisted
+2025-08-12T18:11:25.046Z [INFO] Starting authentication service...
+2025-08-12T18:11:25.098Z [INFO] Connected to MongoDB
+2025-08-12T18:11:25.107Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T18:11:25.900Z [INFO] Starting authentication service...
+2025-08-12T18:11:25.930Z [INFO] Connected to MongoDB
+2025-08-12T18:11:25.950Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T18:11:26.704Z [INFO] Starting authentication service...
+2025-08-12T18:11:26.719Z [INFO] Connected to MongoDB
+2025-08-12T18:11:26.728Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T18:11:27.663Z [INFO] Starting authentication service...
+2025-08-12T18:11:27.679Z [INFO] Connected to MongoDB
+2025-08-12T18:11:27.688Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T18:11:28.898Z [INFO] Starting authentication service...
+2025-08-12T18:11:28.913Z [INFO] Connected to MongoDB
+2025-08-12T18:11:28.919Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-12T18:11:30.967Z [INFO] Starting authentication service...
+2025-08-12T18:11:30.981Z [INFO] Connected to MongoDB
+2025-08-12T18:11:31.037Z [INFO] RabbitMQ publisher initialized
+2025-08-12T18:11:31.039Z [INFO] Auth service listening on port 4000
+2025-08-12T18:12:21.257Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 3427s
+2025-08-12T18:12:21.258Z [INFO] logout: token blacklisted for 3427 seconds
+2025-08-12T18:12:22.682Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:23.602Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:24.091Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:24.290Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:24.457Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:24.635Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:24.827Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:24.987Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:25.173Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:25.355Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:25.608Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:25.774Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:25.956Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:26.139Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:26.340Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:26.523Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:26.708Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:26.875Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:27.041Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:27.224Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:27.405Z [INFO] logout: token already blacklisted
+2025-08-12T18:12:27.591Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:18.950Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:19.534Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:19.835Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:20.017Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:20.198Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:20.363Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:20.542Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:20.711Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:20.895Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:21.062Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:21.243Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:21.412Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:21.580Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:21.762Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:21.944Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:22.112Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:22.312Z [INFO] logout: token already blacklisted
+2025-08-12T18:19:22.654Z [INFO] logout: token already blacklisted
+2025-08-12T18:22:03.567Z [INFO] Starting authentication service...
+2025-08-12T18:22:03.581Z [INFO] Connected to MongoDB
+2025-08-12T18:22:03.589Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-12T18:22:04.355Z [INFO] Starting authentication service...
+2025-08-12T18:22:04.369Z [INFO] Connected to MongoDB
+2025-08-12T18:22:04.376Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-12T18:22:05.119Z [INFO] Starting authentication service...
+2025-08-12T18:22:05.136Z [INFO] Connected to MongoDB
+2025-08-12T18:22:05.149Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-12T18:22:06.103Z [INFO] Starting authentication service...
+2025-08-12T18:22:06.118Z [INFO] Connected to MongoDB
+2025-08-12T18:22:06.126Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-12T18:22:07.385Z [INFO] Starting authentication service...
+2025-08-12T18:22:07.404Z [INFO] Connected to MongoDB
+2025-08-12T18:22:07.412Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-12T18:22:09.474Z [INFO] Starting authentication service...
+2025-08-12T18:22:09.487Z [INFO] Connected to MongoDB
+2025-08-12T18:22:09.542Z [INFO] RabbitMQ publisher initialized
+2025-08-12T18:22:09.544Z [INFO] Auth service listening on port 4000
+2025-08-12T18:24:03.643Z [INFO] Blacklisted token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdHR1aWQiOiJteTI0NzQiLCJlbWFpbCI6Im1haGVzaHlhZGF2MDE3MEBnbWFpbC5jb20iLCJpYXQiOjE3NTUwMjIxNjgsImV4cCI6MTc1NTAyNTc2OH0.iTmxSwWf90F5Ij6mSNDCWAzhkQXs9XodiUnoyKIAtDg for 2725s
+2025-08-12T18:24:03.643Z [INFO] logout: Token blacklisted for 2725 seconds for attuid: my2474
+2025-08-12T18:24:04.653Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T18:24:05.149Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T18:24:05.649Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T18:24:05.845Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T18:24:06.036Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T18:24:06.215Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T18:24:06.404Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T18:24:06.566Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T18:24:06.785Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T18:24:06.983Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T18:24:07.161Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T18:24:07.366Z [INFO] logout: Token already blacklisted for attuid: my2474
+2025-08-12T20:05:25.167Z [INFO] Starting authentication service...
+2025-08-12T20:05:25.180Z [INFO] Connected to MongoDB
+2025-08-12T20:05:25.185Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.6:5672
+2025-08-12T20:05:25.698Z [INFO] Starting authentication service...
+2025-08-12T20:05:25.714Z [INFO] Connected to MongoDB
+2025-08-12T20:05:25.721Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.6:5672
+2025-08-12T20:05:26.353Z [INFO] Starting authentication service...
+2025-08-12T20:05:26.366Z [INFO] Connected to MongoDB
+2025-08-12T20:05:26.373Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.6:5672
+2025-08-12T20:05:27.227Z [INFO] Starting authentication service...
+2025-08-12T20:05:27.242Z [INFO] Connected to MongoDB
+2025-08-12T20:05:27.248Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.6:5672
+2025-08-12T20:05:28.451Z [INFO] Starting authentication service...
+2025-08-12T20:05:28.464Z [INFO] Connected to MongoDB
+2025-08-12T20:05:28.472Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.6:5672
+2025-08-12T20:05:30.470Z [INFO] Starting authentication service...
+2025-08-12T20:05:30.482Z [INFO] Connected to MongoDB
+2025-08-12T20:05:30.532Z [INFO] RabbitMQ publisher initialized
+2025-08-12T20:05:30.535Z [INFO] Auth service listening on port 4000
+2025-08-15T12:50:20.015Z [INFO] Starting authentication service...
+2025-08-15T12:50:20.033Z [INFO] Connected to MongoDB
+2025-08-15T12:50:20.040Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-15T12:50:20.636Z [INFO] Starting authentication service...
+2025-08-15T12:50:20.651Z [INFO] Connected to MongoDB
+2025-08-15T12:50:20.663Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-15T12:50:21.349Z [INFO] Starting authentication service...
+2025-08-15T12:50:21.363Z [INFO] Connected to MongoDB
+2025-08-15T12:50:21.371Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-15T12:50:22.230Z [INFO] Starting authentication service...
+2025-08-15T12:50:22.242Z [INFO] Connected to MongoDB
+2025-08-15T12:50:22.251Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-15T12:50:23.499Z [INFO] Starting authentication service...
+2025-08-15T12:50:23.515Z [INFO] Connected to MongoDB
+2025-08-15T12:50:23.527Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-15T12:50:25.611Z [INFO] Starting authentication service...
+2025-08-15T12:50:25.627Z [INFO] Connected to MongoDB
+2025-08-15T12:50:25.681Z [INFO] RabbitMQ publisher initialized
+2025-08-15T12:50:25.683Z [INFO] Auth service listening on port 4000
+2025-08-15T13:11:23.571Z [INFO] Starting authentication service...
+2025-08-15T13:11:23.600Z [INFO] Connected to MongoDB
+2025-08-15T13:11:23.670Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-15T13:11:23.675Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-15T13:11:23.730Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-15T13:11:23.834Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-15T13:11:23.989Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-15T13:11:24.193Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-15T13:11:24.448Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-15T13:11:24.753Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-15T13:11:25.117Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-15T13:11:25.521Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-15T13:11:25.978Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-15T14:06:43.489Z [INFO] Starting authentication service...
+2025-08-15T14:06:43.503Z [INFO] Connected to MongoDB
+2025-08-15T14:06:43.508Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-15T14:06:44.063Z [INFO] Starting authentication service...
+2025-08-15T14:06:44.077Z [INFO] Connected to MongoDB
+2025-08-15T14:06:44.085Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-15T14:06:44.713Z [INFO] Starting authentication service...
+2025-08-15T14:06:44.726Z [INFO] Connected to MongoDB
+2025-08-15T14:06:44.735Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-15T14:06:45.820Z [INFO] Starting authentication service...
+2025-08-15T14:06:45.844Z [INFO] Connected to MongoDB
+2025-08-15T14:06:45.856Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-15T14:06:47.315Z [INFO] Starting authentication service...
+2025-08-15T14:06:47.335Z [INFO] Connected to MongoDB
+2025-08-15T14:06:47.346Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-15T14:06:49.744Z [INFO] Starting authentication service...
+2025-08-15T14:06:49.761Z [INFO] Connected to MongoDB
+2025-08-15T14:06:49.832Z [INFO] RabbitMQ publisher initialized
+2025-08-15T14:06:49.835Z [INFO] Auth service listening on port 4000
+2025-08-19T19:21:16.327Z [INFO] Starting authentication service...
+2025-08-19T19:21:16.343Z [INFO] Connected to MongoDB
+2025-08-19T19:21:16.375Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:16.380Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:16.434Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:16.539Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:16.694Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:16.897Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:17.154Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:17.460Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:17.816Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:18.222Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:18.677Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:19.183Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:19.688Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:20.199Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:20.713Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:21.232Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:21.740Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:22.248Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:22.765Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:23.279Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:23.790Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:24.293Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:24.801Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:25.316Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:25.831Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:26.346Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:26.858Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:27.370Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:27.884Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:28.397Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:28.905Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:29.416Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:29.922Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:30.432Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:30.942Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:31.461Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:31.975Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:32.490Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:33.007Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:33.520Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:34.027Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:34.539Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:35.044Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:35.555Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:36.065Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:36.581Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:37.095Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:37.608Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:38.119Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:38.632Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:39.144Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:39.654Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:40.160Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:40.665Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:41.176Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:41.683Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:42.198Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:42.715Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:43.226Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:43.740Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:44.249Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:44.754Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:45.261Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:45.766Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:46.276Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:46.783Z [ERROR] Redis error: Error: getaddrinfo ENOTFOUND redis
+2025-08-19T19:21:50.248Z [INFO] Starting authentication service...
+2025-08-19T19:21:50.770Z [INFO] Connected to MongoDB
+2025-08-19T19:21:50.777Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-19T19:21:51.325Z [INFO] Starting authentication service...
+2025-08-19T19:21:51.344Z [INFO] Connected to MongoDB
+2025-08-19T19:21:51.359Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-19T19:21:51.963Z [INFO] Starting authentication service...
+2025-08-19T19:21:51.976Z [INFO] Connected to MongoDB
+2025-08-19T19:21:51.983Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-19T19:21:52.788Z [INFO] Starting authentication service...
+2025-08-19T19:21:52.805Z [INFO] Connected to MongoDB
+2025-08-19T19:21:52.813Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-19T19:21:54.008Z [INFO] Starting authentication service...
+2025-08-19T19:21:54.022Z [INFO] Connected to MongoDB
+2025-08-19T19:21:54.031Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-19T19:21:56.541Z [INFO] Starting authentication service...
+2025-08-19T19:21:56.553Z [INFO] Connected to MongoDB
+2025-08-19T19:21:56.605Z [INFO] RabbitMQ publisher initialized
+2025-08-19T19:21:56.607Z [INFO] Auth service listening on port 4000
+2025-08-19T19:22:07.756Z [INFO] check-attuid: Employee not found for attuid: my2474
+2025-08-19T19:22:16.093Z [INFO] check-attuid: Employee not found for attuid: mp5704
+2025-08-19T19:25:42.793Z [INFO] check-attuid: Employee not found for attuid: my2474
+2025-08-19T19:28:29.843Z [INFO] Set OTP in Redis for my2474 (ttl 300s)
+2025-08-19T19:28:29.845Z [INFO] Published email job for attuid=my2474 email=maheshyadav0170@gmail.com
+2025-08-19T19:28:29.845Z [INFO] check-attuid: OTP generated and sent to email for attuid: my2474
+2025-08-19T19:29:00.159Z [INFO] verify-otp: Account verified and created for attuid: my2474
+2025-08-19T19:29:27.491Z [INFO] set-password: Password successfully set for attuid: my2474
+2025-08-19T19:29:59.871Z [INFO] check-attuid: Found verified user for attuid: my2474
+2025-08-19T19:30:06.285Z [INFO] Reset failed login attempts for my2474
+2025-08-19T19:30:06.288Z [INFO] login: Successful login for attuid: my2474
+2025-08-19T19:30:09.944Z [INFO] Reset failed login attempts for my2474
+2025-08-19T19:30:09.945Z [INFO] login: Successful login for attuid: my2474
+2025-08-19T19:30:57.849Z [INFO] login: Invalid password for attuid: my2474
+2025-08-19T19:30:57.852Z [INFO] Set rate limit for login_attempts:my2474: 1 (ttl 900s)
+2025-08-19T19:30:57.852Z [INFO] Incremented failed login attempt for my2474: 1
+2025-08-19T19:34:05.579Z [INFO] Set OTP in Redis for mp5704 (ttl 300s)
+2025-08-19T19:34:05.581Z [INFO] Published email job for attuid=mp5704 email=maheshyadav0170@gmail.com
+2025-08-19T19:34:05.581Z [INFO] check-attuid: OTP generated and sent to email for attuid: mp5704
+2025-08-19T19:34:23.505Z [INFO] verify-otp: Invalid OTP provided for attuid: mp5704
+2025-08-19T19:34:30.701Z [ERROR] verify-otp: Error verifying OTP for attuid mp5704: MongoServerError: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: auth_db.authusers index: email_1 dup key: { email: "maheshyadav0170@gmail.com" }
+2025-08-19T19:37:14.646Z [INFO] check-attuid: Employee not found for attuid: mp5708
+2025-08-19T19:37:19.511Z [INFO] Set OTP in Redis for mp5704 (ttl 300s)
+2025-08-19T19:37:19.512Z [INFO] Published email job for attuid=mp5704 email=maheshyadhav0160@gmail.com
+2025-08-19T19:37:19.512Z [INFO] check-attuid: OTP generated and sent to email for attuid: mp5704
+2025-08-19T19:37:42.013Z [INFO] verify-otp: Invalid OTP provided for attuid: mp5704
+2025-08-19T19:37:45.063Z [INFO] verify-otp: Account verified and created for attuid: mp5704
+2025-08-19T19:37:56.797Z [INFO] set-password: Password successfully set for attuid: mp5704
+2025-08-19T19:39:02.120Z [INFO] check-attuid: Found verified user for attuid: mp5704
+2025-08-19T19:39:24.794Z [INFO] Reset failed login attempts for mp5704
+2025-08-19T19:39:24.796Z [INFO] login: Successful login for attuid: mp5704
+2025-08-19T19:41:11.935Z [INFO] check-attuid: Found verified user for attuid: mp5704
+2025-08-19T19:42:01.015Z [INFO] Set OTP in Redis for mp5704 (ttl 300s)
+2025-08-19T19:42:01.016Z [INFO] Published email job for attuid=mp5704 email=maheshyadhav0160@gmail.com
+2025-08-19T19:42:01.016Z [INFO] check-attuid: OTP generated and sent to email for attuid: mp5704
+2025-08-19T19:42:23.079Z [INFO] verify-otp: Account verified and created for attuid: mp5704
+2025-08-19T19:42:43.822Z [INFO] set-password: Password successfully set for attuid: mp5704
+2025-08-19T19:45:36.097Z [INFO] Set OTP in Redis for mp5704 (ttl 300s)
+2025-08-19T19:45:36.099Z [INFO] Published email job for attuid=mp5704 email=maheshyadhav0160@gmail.com
+2025-08-19T19:45:36.099Z [INFO] check-attuid: OTP generated and sent to email for attuid: mp5704
+2025-08-19T19:45:50.512Z [INFO] verify-otp: Account verified and created for attuid: mp5704
+2025-08-19T19:45:59.522Z [INFO] set-password: Password successfully set for attuid: mp5704
+2025-08-19T19:46:13.240Z [INFO] check-attuid: Found verified user for attuid: mp5704
+2025-08-19T19:46:19.695Z [INFO] Reset failed login attempts for mp5704
+2025-08-19T19:46:19.697Z [INFO] login: Successful login for attuid: mp5704
+2025-08-19T19:47:59.633Z [INFO] check-attuid: Found verified user for attuid: my2474
+2025-08-19T19:48:04.454Z [INFO] Reset failed login attempts for my2474
+2025-08-19T19:48:04.456Z [INFO] login: Successful login for attuid: my2474
+2025-08-19T19:51:57.584Z [INFO] check-attuid: Found verified user for attuid: mp5704
+2025-08-19T19:52:06.044Z [INFO] Reset failed login attempts for mp5704
+2025-08-19T19:52:06.047Z [INFO] login: Successful login for attuid: mp5704
+2025-08-19T19:55:02.282Z [INFO] check-attuid: Found verified user for attuid: my2474
+2025-08-19T19:55:11.464Z [INFO] Reset failed login attempts for my2474
+2025-08-19T19:55:11.466Z [INFO] login: Successful login for attuid: my2474
+2025-08-20T05:11:10.136Z [INFO] Starting authentication service...
+2025-08-20T05:11:10.182Z [INFO] Connected to MongoDB
+2025-08-20T05:11:10.191Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-20T05:11:10.703Z [INFO] Starting authentication service...
+2025-08-20T05:11:10.715Z [INFO] Connected to MongoDB
+2025-08-20T05:11:10.724Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-20T05:11:11.308Z [INFO] Starting authentication service...
+2025-08-20T05:11:11.323Z [INFO] Connected to MongoDB
+2025-08-20T05:11:11.336Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-20T05:11:12.129Z [INFO] Starting authentication service...
+2025-08-20T05:11:12.142Z [INFO] Connected to MongoDB
+2025-08-20T05:11:12.150Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-20T05:11:13.353Z [INFO] Starting authentication service...
+2025-08-20T05:11:13.368Z [INFO] Connected to MongoDB
+2025-08-20T05:11:13.374Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-20T05:11:15.381Z [INFO] Starting authentication service...
+2025-08-20T05:11:15.394Z [INFO] Connected to MongoDB
+2025-08-20T05:11:15.446Z [INFO] RabbitMQ publisher initialized
+2025-08-20T05:11:15.448Z [INFO] Auth service listening on port 4000
+2025-08-20T05:14:11.720Z [INFO] Starting authentication service...
+2025-08-20T05:14:11.739Z [INFO] Connected to MongoDB
+2025-08-20T05:14:11.793Z [INFO] RabbitMQ publisher initialized
+2025-08-20T05:14:11.795Z [INFO] Auth service listening on port 4000
+2025-08-20T05:48:23.863Z [INFO] check-attuid: Found verified user for attuid: my2474
+2025-08-20T05:48:27.994Z [INFO] Reset failed login attempts for my2474
+2025-08-20T05:48:28.003Z [INFO] login: Successful login for attuid: my2474
+2025-08-24T10:13:23.477Z [INFO] Starting authentication service...
+2025-08-24T10:13:23.491Z [INFO] Connected to MongoDB
+2025-08-24T10:13:23.497Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-24T10:13:24.022Z [INFO] Starting authentication service...
+2025-08-24T10:13:24.036Z [INFO] Connected to MongoDB
+2025-08-24T10:13:24.043Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-24T10:13:24.646Z [INFO] Starting authentication service...
+2025-08-24T10:13:24.660Z [INFO] Connected to MongoDB
+2025-08-24T10:13:24.666Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-24T10:13:25.620Z [INFO] Starting authentication service...
+2025-08-24T10:13:25.639Z [INFO] Connected to MongoDB
+2025-08-24T10:13:25.651Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-24T10:13:26.896Z [INFO] Starting authentication service...
+2025-08-24T10:13:26.910Z [INFO] Connected to MongoDB
+2025-08-24T10:13:26.920Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-24T10:13:29.009Z [INFO] Starting authentication service...
+2025-08-24T10:13:29.022Z [INFO] Connected to MongoDB
+2025-08-24T10:13:29.074Z [INFO] RabbitMQ publisher initialized
+2025-08-24T10:13:29.077Z [INFO] Auth service listening on port 4000
+2025-08-24T10:13:39.610Z [INFO] Starting authentication service...
+2025-08-24T10:13:39.628Z [INFO] Connected to MongoDB
+2025-08-24T10:13:39.684Z [INFO] RabbitMQ publisher initialized
+2025-08-24T10:13:39.686Z [INFO] Auth service listening on port 4000
+2025-08-24T10:14:54.121Z [INFO] Starting authentication service...
+2025-08-24T10:14:54.139Z [INFO] Connected to MongoDB
+2025-08-24T10:14:54.153Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-24T10:14:54.778Z [INFO] Starting authentication service...
+2025-08-24T10:14:54.795Z [INFO] Connected to MongoDB
+2025-08-24T10:14:54.804Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-24T10:14:55.449Z [INFO] Starting authentication service...
+2025-08-24T10:14:55.464Z [INFO] Connected to MongoDB
+2025-08-24T10:14:55.473Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-24T10:14:56.265Z [INFO] Starting authentication service...
+2025-08-24T10:14:56.279Z [INFO] Connected to MongoDB
+2025-08-24T10:14:56.287Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-24T10:14:57.501Z [INFO] Starting authentication service...
+2025-08-24T10:14:57.517Z [INFO] Connected to MongoDB
+2025-08-24T10:14:57.527Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-24T10:14:59.528Z [INFO] Starting authentication service...
+2025-08-24T10:14:59.540Z [INFO] Connected to MongoDB
+2025-08-24T10:14:59.592Z [INFO] RabbitMQ publisher initialized
+2025-08-24T10:14:59.594Z [INFO] Auth service listening on port 4000
+2025-08-24T10:18:55.264Z [INFO] Starting authentication service...
+2025-08-24T10:18:55.291Z [INFO] Connected to MongoDB
+2025-08-24T10:18:55.301Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:18:56.370Z [INFO] Starting authentication service...
+2025-08-24T10:18:56.399Z [INFO] Connected to MongoDB
+2025-08-24T10:18:56.429Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:18:58.675Z [INFO] Starting authentication service...
+2025-08-24T10:18:58.708Z [INFO] Connected to MongoDB
+2025-08-24T10:18:58.722Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:18:59.885Z [INFO] Starting authentication service...
+2025-08-24T10:18:59.904Z [INFO] Connected to MongoDB
+2025-08-24T10:18:59.913Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:19:01.128Z [INFO] Starting authentication service...
+2025-08-24T10:19:01.143Z [INFO] Connected to MongoDB
+2025-08-24T10:19:01.153Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:19:03.172Z [INFO] Starting authentication service...
+2025-08-24T10:19:03.187Z [INFO] Connected to MongoDB
+2025-08-24T10:19:03.234Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:19:06.862Z [INFO] Starting authentication service...
+2025-08-24T10:19:06.875Z [INFO] Connected to MongoDB
+2025-08-24T10:19:06.927Z [INFO] RabbitMQ publisher initialized
+2025-08-24T10:19:06.929Z [INFO] Auth service listening on port 4000
+2025-08-24T10:29:51.792Z [INFO] Starting authentication service...
+2025-08-24T10:29:51.809Z [INFO] Connected to MongoDB
+2025-08-24T10:29:51.817Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:29:52.439Z [INFO] Starting authentication service...
+2025-08-24T10:29:52.453Z [INFO] Connected to MongoDB
+2025-08-24T10:29:52.460Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:29:53.095Z [INFO] Starting authentication service...
+2025-08-24T10:29:53.108Z [INFO] Connected to MongoDB
+2025-08-24T10:29:53.116Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:29:54.026Z [INFO] Starting authentication service...
+2025-08-24T10:29:54.040Z [INFO] Connected to MongoDB
+2025-08-24T10:29:54.050Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:29:55.261Z [INFO] Starting authentication service...
+2025-08-24T10:29:55.275Z [INFO] Connected to MongoDB
+2025-08-24T10:29:55.285Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:29:57.258Z [INFO] Starting authentication service...
+2025-08-24T10:29:57.270Z [INFO] Connected to MongoDB
+2025-08-24T10:29:57.322Z [INFO] RabbitMQ publisher initialized
+2025-08-24T10:29:57.325Z [INFO] Auth service listening on port 4000
+2025-08-24T10:38:56.581Z [INFO] Starting authentication service...
+2025-08-24T10:38:57.106Z [INFO] Connected to MongoDB
+2025-08-24T10:38:57.118Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T10:38:57.669Z [INFO] Starting authentication service...
+2025-08-24T10:38:57.682Z [INFO] Connected to MongoDB
+2025-08-24T10:38:57.688Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T10:38:58.238Z [INFO] Starting authentication service...
+2025-08-24T10:38:58.249Z [INFO] Connected to MongoDB
+2025-08-24T10:38:58.256Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T10:38:59.044Z [INFO] Starting authentication service...
+2025-08-24T10:38:59.057Z [INFO] Connected to MongoDB
+2025-08-24T10:38:59.064Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T10:39:00.251Z [INFO] Starting authentication service...
+2025-08-24T10:39:00.270Z [INFO] Connected to MongoDB
+2025-08-24T10:39:00.331Z [INFO] RabbitMQ publisher initialized
+2025-08-24T10:39:00.333Z [INFO] Auth service listening on port 4000
+2025-08-24T10:39:25.429Z [INFO] Starting authentication service...
+2025-08-24T10:39:25.444Z [INFO] Connected to MongoDB
+2025-08-24T10:39:25.497Z [INFO] RabbitMQ publisher initialized
+2025-08-24T10:39:25.499Z [INFO] Auth service listening on port 4000
+2025-08-24T10:42:12.193Z [INFO] Starting authentication service...
+2025-08-24T10:42:12.210Z [INFO] Connected to MongoDB
+2025-08-24T10:42:12.220Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:42:12.938Z [INFO] Starting authentication service...
+2025-08-24T10:42:12.952Z [INFO] Connected to MongoDB
+2025-08-24T10:42:12.964Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:42:13.716Z [INFO] Starting authentication service...
+2025-08-24T10:42:13.730Z [INFO] Connected to MongoDB
+2025-08-24T10:42:13.742Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:42:14.676Z [INFO] Starting authentication service...
+2025-08-24T10:42:14.694Z [INFO] Connected to MongoDB
+2025-08-24T10:42:14.708Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:42:15.983Z [INFO] Starting authentication service...
+2025-08-24T10:42:15.997Z [INFO] Connected to MongoDB
+2025-08-24T10:42:16.008Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T10:42:18.108Z [INFO] Starting authentication service...
+2025-08-24T10:42:18.123Z [INFO] Connected to MongoDB
+2025-08-24T10:42:18.177Z [INFO] RabbitMQ publisher initialized
+2025-08-24T10:42:18.179Z [INFO] Auth service listening on port 4000
