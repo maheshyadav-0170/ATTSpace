@@ -7,20 +7,32 @@ async function fetchNotifications(req, res) {
     const { attuid } = req.body;
     const filter = attuid ? { attuid, status: "pending" } : { status: "pending" };
 
-    const notifs = await Notification.find(filter).sort({ createdAt: -1 });
+    const notifications = await Notification.find(filter).sort({ createdAt: -1 });
 
-    if (notifs.length > 0) {
-      const ids = notifs.map((n) => n._id);
+    if (notifications.length > 0) {
+      const ids = notifications.map((notification) => notification._id);
       await Notification.updateMany(
         { _id: { $in: ids } },
         { $set: { status: "sent" } }
       );
+      return res.status(200).json({
+        success: true,
+        message: "Notifications retrieved successfully.",
+        data: notifications,
+      });
     }
 
-    res.json(notifs);
-  } catch (err) {
-    logger.error("fetchNotifications error: " + err.toString());
-    res.status(500).json({ message: "Internal error" });
+    return res.status(200).json({
+      success: true,
+      message: "No pending notifications found.",
+      data: [],
+    });
+  } catch (error) {
+    logger.error(`Error fetching notifications: ${error.message}`);
+    return res.status(500).json({
+      success: false,
+      message: "An unexpected error occurred while retrieving notifications. Please try again later.",
+    });
   }
 }
 
@@ -28,15 +40,36 @@ async function fetchNotifications(req, res) {
 async function markRead(req, res) {
   try {
     const { id } = req.body;
-    if (!id) return res.status(400).json({ message: "id required" });
+    if (!id) {
+      return res.status(400).json({
+        success: false,
+        message: "Notification ID is required to mark a notification as read.",
+      });
+    }
 
-    const notif = await Notification.findByIdAndUpdate(id, { read: true }, { new: true });
-    if (!notif) return res.status(404).json({ message: "Notification not found" });
+    const notification = await Notification.findByIdAndUpdate(
+      id,
+      { read: true },
+      { new: true }
+    );
+    if (!notification) {
+      return res.status(404).json({
+        success: false,
+        message: "The specified notification could not be found.",
+      });
+    }
 
-    res.json(notif);
-  } catch (err) {
-    logger.error("markRead error: " + err.toString());
-    res.status(500).json({ message: "Internal error" });
+    return res.status(200).json({
+      success: true,
+      message: "Notification successfully marked as read.",
+      data: notification,
+    });
+  } catch (error) {
+    logger.error(`Error marking notification as read: ${error.message}`);
+    return res.status(500).json({
+      success: false,
+      message: "An unexpected error occurred while marking the notification as read. Please try again later.",
+    });
   }
 }
 
@@ -44,20 +77,29 @@ async function markRead(req, res) {
 async function markAllRead(req, res) {
   try {
     const { attuid } = req.body;
-    if (!attuid) return res.status(400).json({ message: "attuid required" });
+    if (!attuid) {
+      return res.status(400).json({
+        success: false,
+        message: "Attuid is required to mark all notifications as read.",
+      });
+    }
 
     const result = await Notification.updateMany(
       { attuid, read: false },
       { $set: { read: true } }
     );
 
-    res.json({
-      message: "All notifications marked as read",
-      modified: result.modifiedCount,
+    return res.status(200).json({
+      success: true,
+      message: `Successfully marked ${result.modifiedCount} notification(s) as read.`,
+      data: { modifiedCount: result.modifiedCount },
     });
-  } catch (err) {
-    logger.error("markAllRead error: " + err.toString());
-    res.status(500).json({ message: "Internal error" });
+  } catch (error) {
+    logger.error(`Error marking all notifications as read: ${error.message}`);
+    return res.status(500).json({
+      success: false,
+      message: "An unexpected error occurred while marking all notifications as read. Please try again later.",
+    });
   }
 }
 
@@ -66,16 +108,35 @@ async function updateStatus(req, res) {
   try {
     const { id, status } = req.body;
     if (!id || !["pending", "sent", "failed"].includes(status)) {
-      return res.status(400).json({ message: "id and valid status required" });
+      return res.status(400).json({
+        success: false,
+        message: "A valid notification ID and status (pending, sent, or failed) are required.",
+      });
     }
 
-    const notif = await Notification.findByIdAndUpdate(id, { status }, { new: true });
-    if (!notif) return res.status(404).json({ message: "Notification not found" });
+    const notification = await Notification.findByIdAndUpdate(
+      id,
+      { status },
+      { new: true }
+    );
+    if (!notification) {
+      return res.status(404).json({
+        success: false,
+        message: "The specified notification could not be found.",
+      });
+    }
 
-    res.json(notif);
-  } catch (err) {
-    logger.error("updateStatus error: " + err.toString());
-    res.status(500).json({ message: "Internal error" });
+    return res.status(200).json({
+      success: true,
+      message: `Notification status successfully updated to '${status}'.`,
+      data: notification,
+    });
+  } catch (error) {
+    logger.error(`Error updating notification status: ${error.message}`);
+    return res.status(500).json({
+      success: false,
+      message: "An unexpected error occurred while updating the notification status. Please try again later.",
+    });
   }
 }
 
