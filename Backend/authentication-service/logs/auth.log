@@ -670,3 +670,270 @@
 2025-08-24T10:42:18.123Z [INFO] Connected to MongoDB
 2025-08-24T10:42:18.177Z [INFO] RabbitMQ publisher initialized
 2025-08-24T10:42:18.179Z [INFO] Auth service listening on port 4000
+2025-08-24T11:09:09.116Z [INFO] Starting authentication service...
+2025-08-24T11:09:09.137Z [INFO] Connected to MongoDB
+2025-08-24T11:09:09.148Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T11:09:10.037Z [INFO] Starting authentication service...
+2025-08-24T11:09:10.055Z [INFO] Connected to MongoDB
+2025-08-24T11:09:10.065Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T11:09:10.935Z [INFO] Starting authentication service...
+2025-08-24T11:09:10.949Z [INFO] Connected to MongoDB
+2025-08-24T11:09:10.959Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T11:09:12.112Z [INFO] Starting authentication service...
+2025-08-24T11:09:12.129Z [INFO] Connected to MongoDB
+2025-08-24T11:09:12.138Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T11:09:13.619Z [INFO] Starting authentication service...
+2025-08-24T11:09:13.637Z [INFO] Connected to MongoDB
+2025-08-24T11:09:13.655Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T11:09:15.784Z [INFO] Starting authentication service...
+2025-08-24T11:09:15.798Z [INFO] Connected to MongoDB
+2025-08-24T11:09:15.853Z [INFO] RabbitMQ publisher initialized
+2025-08-24T11:09:15.855Z [INFO] Auth service listening on port 4000
+2025-08-24T17:52:13.287Z [INFO] Starting authentication service...
+2025-08-24T17:52:13.311Z [INFO] Connected to MongoDB
+2025-08-24T17:52:13.318Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.5:5672
+2025-08-24T17:52:13.987Z [INFO] Starting authentication service...
+2025-08-24T17:52:14.001Z [INFO] Connected to MongoDB
+2025-08-24T17:52:14.010Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.5:5672
+2025-08-24T17:52:14.739Z [INFO] Starting authentication service...
+2025-08-24T17:52:14.759Z [INFO] Connected to MongoDB
+2025-08-24T17:52:14.772Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.5:5672
+2025-08-24T17:52:15.640Z [INFO] Starting authentication service...
+2025-08-24T17:52:15.660Z [INFO] Connected to MongoDB
+2025-08-24T17:52:15.669Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.5:5672
+2025-08-24T17:52:17.708Z [INFO] Starting authentication service...
+2025-08-24T17:52:19.912Z [INFO] Starting authentication service...
+2025-08-24T17:52:19.924Z [INFO] Connected to MongoDB
+2025-08-24T17:52:19.977Z [INFO] RabbitMQ publisher initialized
+2025-08-24T17:52:19.980Z [INFO] Auth service listening on port 4000
+2025-08-24T18:12:28.051Z [INFO] Starting authentication service...
+2025-08-24T18:12:28.065Z [INFO] Connected to MongoDB
+2025-08-24T18:12:28.071Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-24T18:12:28.591Z [INFO] Starting authentication service...
+2025-08-24T18:12:28.604Z [INFO] Connected to MongoDB
+2025-08-24T18:12:28.611Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-24T18:12:29.214Z [INFO] Starting authentication service...
+2025-08-24T18:12:29.227Z [INFO] Connected to MongoDB
+2025-08-24T18:12:29.234Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-24T18:12:30.088Z [INFO] Starting authentication service...
+2025-08-24T18:12:30.102Z [INFO] Connected to MongoDB
+2025-08-24T18:12:30.109Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-24T18:12:31.313Z [INFO] Starting authentication service...
+2025-08-24T18:12:31.327Z [INFO] Connected to MongoDB
+2025-08-24T18:12:31.334Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-24T18:12:33.352Z [INFO] Starting authentication service...
+2025-08-24T18:12:33.364Z [INFO] Connected to MongoDB
+2025-08-24T18:12:33.416Z [INFO] RabbitMQ publisher initialized
+2025-08-24T18:12:33.418Z [INFO] Auth service listening on port 4000
+2025-08-24T18:18:30.381Z [INFO] Starting authentication service...
+2025-08-24T18:18:30.398Z [INFO] Connected to MongoDB
+2025-08-24T18:18:30.456Z [INFO] RabbitMQ publisher initialized
+2025-08-24T18:18:30.459Z [INFO] Auth service listening on port 4000
+2025-08-24T18:22:48.888Z [INFO] Starting authentication service...
+2025-08-24T18:22:49.410Z [INFO] Connected to MongoDB
+2025-08-24T18:22:49.418Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T18:22:50.260Z [INFO] Starting authentication service...
+2025-08-24T18:22:50.285Z [INFO] Connected to MongoDB
+2025-08-24T18:22:50.300Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T18:22:51.100Z [INFO] Starting authentication service...
+2025-08-24T18:22:51.125Z [INFO] Connected to MongoDB
+2025-08-24T18:22:51.137Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T18:22:52.164Z [INFO] Starting authentication service...
+2025-08-24T18:22:52.189Z [INFO] Connected to MongoDB
+2025-08-24T18:22:52.198Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T18:22:53.562Z [INFO] Starting authentication service...
+2025-08-24T18:22:53.577Z [INFO] Connected to MongoDB
+2025-08-24T18:22:53.586Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T18:22:55.687Z [INFO] Starting authentication service...
+2025-08-24T18:22:55.707Z [INFO] Connected to MongoDB
+2025-08-24T18:22:55.761Z [INFO] RabbitMQ publisher initialized
+2025-08-24T18:22:55.763Z [INFO] Auth service listening on port 4000
+2025-08-24T18:23:47.772Z [INFO] Starting authentication service...
+2025-08-24T18:23:47.792Z [INFO] Connected to MongoDB
+2025-08-24T18:23:47.802Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T18:23:48.582Z [INFO] Starting authentication service...
+2025-08-24T18:23:48.603Z [INFO] Connected to MongoDB
+2025-08-24T18:23:48.611Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T18:23:49.354Z [INFO] Starting authentication service...
+2025-08-24T18:23:49.368Z [INFO] Connected to MongoDB
+2025-08-24T18:23:49.376Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T18:23:50.270Z [INFO] Starting authentication service...
+2025-08-24T18:23:50.285Z [INFO] Connected to MongoDB
+2025-08-24T18:23:50.293Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T18:23:51.535Z [INFO] Starting authentication service...
+2025-08-24T18:23:51.549Z [INFO] Connected to MongoDB
+2025-08-24T18:23:51.555Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T18:23:53.543Z [INFO] Starting authentication service...
+2025-08-24T18:23:53.555Z [INFO] Connected to MongoDB
+2025-08-24T18:23:53.607Z [INFO] RabbitMQ publisher initialized
+2025-08-24T18:23:53.609Z [INFO] Auth service listening on port 4000
+2025-08-24T19:09:31.182Z [INFO] check-attuid: Found verified user for attuid: my2474
+2025-08-24T19:10:08.724Z [INFO] check-attuid: Employee not found for attuid: my2346
+2025-08-24T19:10:57.642Z [INFO] Set OTP in Redis for mp5704 (ttl 300s)
+2025-08-24T19:10:57.646Z [INFO] Published email job for attuid=mp5704 email=maheshyadhav0160@gmail.com
+2025-08-24T19:10:57.646Z [INFO] check-attuid: OTP generated and sent to email for attuid: mp5704
+2025-08-24T19:11:51.861Z [INFO] verify-otp: Account verified and created for attuid: mp5704
+2025-08-24T19:12:04.308Z [INFO] set-password: Password successfully set for attuid: mp5704
+2025-08-24T19:12:17.873Z [INFO] check-attuid: Found verified user for attuid: mp5704
+2025-08-24T19:12:56.691Z [INFO] login: Invalid password for attuid: mp5704
+2025-08-24T19:12:56.695Z [INFO] Set rate limit for login_attempts:mp5704: 1 (ttl 900s)
+2025-08-24T19:12:56.695Z [INFO] Incremented failed login attempt for mp5704: 1
+2025-08-24T19:13:01.589Z [INFO] Reset failed login attempts for mp5704
+2025-08-24T19:13:01.594Z [INFO] login: Successful login for attuid: mp5704
+2025-08-24T19:25:01.552Z [INFO] check-attuid: Found verified user for attuid: my2474
+2025-08-24T19:25:05.148Z [INFO] login: Invalid password for attuid: my2474
+2025-08-24T19:25:05.151Z [INFO] Set rate limit for login_attempts:my2474: 1 (ttl 900s)
+2025-08-24T19:25:05.151Z [INFO] Incremented failed login attempt for my2474: 1
+2025-08-24T19:25:05.553Z [INFO] login: Invalid password for attuid: my2474
+2025-08-24T19:25:05.556Z [INFO] Set rate limit for login_attempts:my2474: 2 (ttl 900s)
+2025-08-24T19:25:05.556Z [INFO] Incremented failed login attempt for my2474: 2
+2025-08-24T19:25:05.892Z [INFO] login: Invalid password for attuid: my2474
+2025-08-24T19:25:05.894Z [INFO] Set rate limit for login_attempts:my2474: 3 (ttl 900s)
+2025-08-24T19:25:05.894Z [INFO] Incremented failed login attempt for my2474: 3
+2025-08-24T19:25:06.203Z [INFO] login: Invalid password for attuid: my2474
+2025-08-24T19:25:06.204Z [INFO] Set rate limit for login_attempts:my2474: 4 (ttl 900s)
+2025-08-24T19:25:06.204Z [INFO] Incremented failed login attempt for my2474: 4
+2025-08-24T19:25:06.503Z [INFO] login: Invalid password for attuid: my2474
+2025-08-24T19:25:06.504Z [INFO] Set rate limit for login_attempts:my2474: 5 (ttl 900s)
+2025-08-24T19:25:06.504Z [INFO] Incremented failed login attempt for my2474: 5
+2025-08-24T19:25:06.878Z [INFO] Rate limit exceeded for my2474
+2025-08-24T19:25:06.879Z [INFO] login: Rate limit exceeded for attuid: my2474
+2025-08-24T19:25:08.698Z [INFO] Rate limit exceeded for my2474
+2025-08-24T19:25:08.699Z [INFO] login: Rate limit exceeded for attuid: my2474
+2025-08-25T05:03:30.440Z [INFO] Starting authentication service...
+2025-08-25T05:03:30.468Z [INFO] Connected to MongoDB
+2025-08-25T05:03:30.476Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-08-25T05:03:31.238Z [INFO] Starting authentication service...
+2025-08-25T05:03:31.267Z [INFO] Connected to MongoDB
+2025-08-25T05:03:31.286Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-08-25T05:03:32.048Z [INFO] Starting authentication service...
+2025-08-25T05:03:32.068Z [INFO] Connected to MongoDB
+2025-08-25T05:03:32.078Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-08-25T05:03:32.927Z [INFO] Starting authentication service...
+2025-08-25T05:03:32.943Z [INFO] Connected to MongoDB
+2025-08-25T05:03:32.952Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-08-25T05:03:34.191Z [INFO] Starting authentication service...
+2025-08-25T05:03:34.204Z [INFO] Connected to MongoDB
+2025-08-25T05:03:34.215Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-08-25T05:03:36.335Z [INFO] Starting authentication service...
+2025-08-25T05:03:36.350Z [INFO] Connected to MongoDB
+2025-08-25T05:03:36.404Z [INFO] RabbitMQ publisher initialized
+2025-08-25T05:03:36.406Z [INFO] Auth service listening on port 4000
+2025-08-25T05:04:10.583Z [INFO] Starting authentication service...
+2025-08-25T05:04:10.602Z [INFO] Connected to MongoDB
+2025-08-25T05:04:10.615Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-25T05:04:11.309Z [INFO] Starting authentication service...
+2025-08-25T05:04:11.325Z [INFO] Connected to MongoDB
+2025-08-25T05:04:11.335Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-25T05:04:11.999Z [INFO] Starting authentication service...
+2025-08-25T05:04:12.015Z [INFO] Connected to MongoDB
+2025-08-25T05:04:12.024Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-25T05:04:12.871Z [INFO] Starting authentication service...
+2025-08-25T05:04:12.885Z [INFO] Connected to MongoDB
+2025-08-25T05:04:12.899Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-25T05:04:14.143Z [INFO] Starting authentication service...
+2025-08-25T05:04:14.163Z [INFO] Connected to MongoDB
+2025-08-25T05:04:14.170Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-25T05:04:16.170Z [INFO] Starting authentication service...
+2025-08-25T05:04:16.187Z [INFO] Connected to MongoDB
+2025-08-25T05:04:16.241Z [INFO] RabbitMQ publisher initialized
+2025-08-25T05:04:16.243Z [INFO] Auth service listening on port 4000
+2025-08-25T05:07:28.723Z [INFO] Starting authentication service...
+2025-08-25T05:07:28.740Z [INFO] Connected to MongoDB
+2025-08-25T05:07:28.794Z [INFO] RabbitMQ publisher initialized
+2025-08-25T05:07:28.796Z [INFO] Auth service listening on port 4000
+2025-08-25T05:07:51.569Z [INFO] Starting authentication service...
+2025-08-25T05:07:51.584Z [INFO] Connected to MongoDB
+2025-08-25T05:07:51.591Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:07:52.313Z [INFO] Starting authentication service...
+2025-08-25T05:07:52.326Z [INFO] Connected to MongoDB
+2025-08-25T05:07:52.336Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:07:53.046Z [INFO] Starting authentication service...
+2025-08-25T05:07:53.061Z [INFO] Connected to MongoDB
+2025-08-25T05:07:53.091Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:07:54.038Z [INFO] Starting authentication service...
+2025-08-25T05:07:54.057Z [INFO] Connected to MongoDB
+2025-08-25T05:07:54.075Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:07:55.346Z [INFO] Starting authentication service...
+2025-08-25T05:07:55.360Z [INFO] Connected to MongoDB
+2025-08-25T05:07:55.368Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:07:57.381Z [INFO] Starting authentication service...
+2025-08-25T05:07:57.397Z [INFO] Connected to MongoDB
+2025-08-25T05:07:57.449Z [INFO] RabbitMQ publisher initialized
+2025-08-25T05:07:57.451Z [INFO] Auth service listening on port 4000
+2025-08-25T05:10:01.858Z [INFO] Starting authentication service...
+2025-08-25T05:10:01.883Z [INFO] Connected to MongoDB
+2025-08-25T05:10:01.895Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:10:02.637Z [INFO] Starting authentication service...
+2025-08-25T05:10:02.663Z [INFO] Connected to MongoDB
+2025-08-25T05:10:02.678Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:10:03.404Z [INFO] Starting authentication service...
+2025-08-25T05:10:03.418Z [INFO] Connected to MongoDB
+2025-08-25T05:10:03.426Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:10:04.272Z [INFO] Starting authentication service...
+2025-08-25T05:10:04.298Z [INFO] Connected to MongoDB
+2025-08-25T05:10:04.307Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:10:05.520Z [INFO] Starting authentication service...
+2025-08-25T05:10:05.534Z [INFO] Connected to MongoDB
+2025-08-25T05:10:05.540Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:10:07.589Z [INFO] Starting authentication service...
+2025-08-25T05:10:07.602Z [INFO] Connected to MongoDB
+2025-08-25T05:10:07.655Z [INFO] RabbitMQ publisher initialized
+2025-08-25T05:10:07.657Z [INFO] Auth service listening on port 4000
+2025-08-25T05:32:03.582Z [INFO] Starting authentication service...
+2025-08-25T05:32:03.607Z [INFO] Connected to MongoDB
+2025-08-25T05:32:03.624Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:32:04.379Z [INFO] Starting authentication service...
+2025-08-25T05:32:04.393Z [INFO] Connected to MongoDB
+2025-08-25T05:32:04.407Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:32:05.154Z [INFO] Starting authentication service...
+2025-08-25T05:32:05.168Z [INFO] Connected to MongoDB
+2025-08-25T05:32:05.176Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:32:06.037Z [INFO] Starting authentication service...
+2025-08-25T05:32:06.051Z [INFO] Connected to MongoDB
+2025-08-25T05:32:06.060Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:32:07.268Z [INFO] Starting authentication service...
+2025-08-25T05:32:07.285Z [INFO] Connected to MongoDB
+2025-08-25T05:32:07.292Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:32:09.282Z [INFO] Starting authentication service...
+2025-08-25T05:32:09.294Z [INFO] Connected to MongoDB
+2025-08-25T05:32:09.350Z [INFO] RabbitMQ publisher initialized
+2025-08-25T05:32:09.353Z [INFO] Auth service listening on port 4000
+2025-08-25T05:36:28.040Z [INFO] Starting authentication service...
+2025-08-25T05:36:28.058Z [INFO] Connected to MongoDB
+2025-08-25T05:36:28.068Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:28.926Z [INFO] Starting authentication service...
+2025-08-25T05:36:28.945Z [INFO] Connected to MongoDB
+2025-08-25T05:36:28.979Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:29.815Z [INFO] Starting authentication service...
+2025-08-25T05:36:29.830Z [INFO] Connected to MongoDB
+2025-08-25T05:36:29.838Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:30.759Z [INFO] Starting authentication service...
+2025-08-25T05:36:30.788Z [INFO] Connected to MongoDB
+2025-08-25T05:36:30.797Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:32.084Z [INFO] Starting authentication service...
+2025-08-25T05:36:32.101Z [INFO] Connected to MongoDB
+2025-08-25T05:36:32.109Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:34.244Z [INFO] Starting authentication service...
+2025-08-25T05:36:34.262Z [INFO] Connected to MongoDB
+2025-08-25T05:36:34.319Z [INFO] RabbitMQ publisher initialized
+2025-08-25T05:36:34.323Z [INFO] Auth service listening on port 4000
+2025-08-25T05:36:50.938Z [INFO] Starting authentication service...
+2025-08-25T05:36:50.958Z [INFO] Connected to MongoDB
+2025-08-25T05:36:50.973Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:51.934Z [INFO] Starting authentication service...
+2025-08-25T05:36:51.959Z [INFO] Connected to MongoDB
+2025-08-25T05:36:52.003Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:52.885Z [INFO] Starting authentication service...
+2025-08-25T05:36:52.901Z [INFO] Connected to MongoDB
+2025-08-25T05:36:52.909Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:53.837Z [INFO] Starting authentication service...
+2025-08-25T05:36:53.850Z [INFO] Connected to MongoDB
+2025-08-25T05:36:53.858Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:55.119Z [INFO] Starting authentication service...
+2025-08-25T05:36:55.133Z [INFO] Connected to MongoDB
+2025-08-25T05:36:55.141Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:57.143Z [INFO] Starting authentication service...
+2025-08-25T05:36:57.156Z [INFO] Connected to MongoDB
+2025-08-25T05:36:57.208Z [INFO] RabbitMQ publisher initialized
+2025-08-25T05:36:57.210Z [INFO] Auth service listening on port 4000

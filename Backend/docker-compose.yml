@@ -71,5 +71,19 @@ services:
       - ./notification-service/logs:/app/logs
     restart: always
 
+  automated-task-service:
+    build: ./automated-task-service
+    container_name: automated-task-service
+    env_file:
+      - ./automated-task-service/.env
+    depends_on:
+      - mongo
+      - redis
+    ports:
+      - "4002:4002"
+    volumes:
+      - ./automated-task-service/logs:/app/logs
+    restart: always
+
 volumes:
   mongo_data:

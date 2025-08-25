@@ -5,14 +5,19 @@ const logger = require("../utils/logger");
 async function fetchNotifications(req, res) {
   try {
     const { attuid } = req.body;
-    const filter = attuid ? { attuid, status: "pending" } : { status: "pending" };
+    if (!attuid) {
+      return res.status(400).json({
+        success: false,
+        message: "Attuid is required to fetch notifications.",
+      });
+    }
 
-    const notifications = await Notification.find(filter).sort({ createdAt: -1 });
+    const notifications = await Notification.find({ attuid }).sort({ createdAt: -1 });
 
     if (notifications.length > 0) {
       const ids = notifications.map((notification) => notification._id);
       await Notification.updateMany(
-        { _id: { $in: ids } },
+        { _id: { $in: ids }, status: "pending" },
         { $set: { status: "sent" } }
       );
       return res.status(200).json({
@@ -24,7 +29,7 @@ async function fetchNotifications(req, res) {
 
     return res.status(200).json({
       success: true,
-      message: "No pending notifications found.",
+      message: "No notifications found for the provided user ID.",
       data: [],
     });
   } catch (error) {

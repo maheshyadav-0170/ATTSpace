@@ -145,3 +145,63 @@
 2025-08-24T10:42:14.760Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.3:5672
 2025-08-24T10:42:16.596Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.3:5672
 2025-08-24T10:42:20.186Z [INFO] Email service started and listening for jobs
+2025-08-24T11:09:09.289Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T11:09:10.680Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T11:09:11.935Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T11:09:13.831Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T11:09:17.429Z [INFO] Email service started and listening for jobs
+2025-08-24T17:52:12.522Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.5:5672
+2025-08-24T17:52:15.047Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.5:5672
+2025-08-24T17:52:21.335Z [INFO] Email service started and listening for jobs
+2025-08-24T18:12:27.407Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-24T18:12:27.860Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-24T18:12:30.018Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-24T18:12:31.840Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-24T18:12:35.367Z [INFO] Email service started and listening for jobs
+2025-08-24T18:18:30.171Z [INFO] Email service started and listening for jobs
+2025-08-24T18:22:49.006Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T18:22:49.568Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T18:22:50.430Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T18:22:53.372Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-24T18:22:56.948Z [INFO] Email service started and listening for jobs
+2025-08-24T18:23:47.233Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T18:23:47.821Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T18:23:48.310Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T18:23:49.014Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T18:23:50.125Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T18:23:51.961Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-24T18:23:55.494Z [INFO] Email service started and listening for jobs
+2025-08-24T19:11:01.287Z [INFO] Email sent to maheshyadhav0160@gmail.com for mp5704
+2025-08-25T05:03:30.642Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-08-25T05:03:31.404Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-08-25T05:03:32.450Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-08-25T05:03:34.273Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-08-25T05:03:37.891Z [INFO] Email service started and listening for jobs
+2025-08-25T05:04:10.169Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-08-25T05:04:10.703Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-25T05:04:12.940Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.7:5672
+2025-08-25T05:04:18.335Z [INFO] Email service started and listening for jobs
+2025-08-25T05:07:28.543Z [INFO] Email service started and listening for jobs
+2025-08-25T05:07:51.149Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:07:52.161Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:07:55.814Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:07:59.303Z [INFO] Email service started and listening for jobs
+2025-08-25T05:10:01.549Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:10:02.010Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:10:03.209Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:10:04.349Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:10:09.705Z [INFO] Email service started and listening for jobs
+2025-08-25T05:32:03.707Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:32:04.232Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-25T05:32:11.347Z [INFO] Email service started and listening for jobs
+2025-08-25T05:36:28.300Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:28.874Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:29.665Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:30.755Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:32.596Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:36.258Z [INFO] Email service started and listening for jobs
+2025-08-25T05:36:50.387Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:51.735Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:53.599Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:55.435Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-08-25T05:36:58.959Z [INFO] Email service started and listening for jobs
