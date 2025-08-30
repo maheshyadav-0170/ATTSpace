@@ -1,22 +1,25 @@
-require("dotenv").config();
-const winston = require('winston');
-const logDir  = process.env.LOG_DIR;
+const winston = require("winston");
+const path = require("path");
+const logDir = process.env.LOG_DIR;
 
 const logger = winston.createLogger({
-  level: 'info',
+  level: "info",
   format: winston.format.combine(
     winston.format.timestamp(),
     winston.format.printf(
-      info => `${info.timestamp} [${info.level.toUpperCase()}] ${info.message}`
+      (info) =>
+        `${info.timestamp} [${info.level.toUpperCase()}] ${info.message}`
     )
   ),
   transports: [
-    new winston.transports.File({ filename: `${logDir}/automated-task-service.log`, maxsize: 5_000_000 })
-  ]
+    new winston.transports.File({
+      filename: `${logDir}/automated-task-service.log`,
+      maxsize: 5_000_000,
+    }),
+  ],
 });
 
-// Also console in dev
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== "production") {
   logger.add(new winston.transports.Console());
 }
 

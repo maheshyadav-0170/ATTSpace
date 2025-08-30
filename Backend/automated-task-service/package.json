@@ -17,7 +17,8 @@
         "node-cron": "^3.0.2",
         "path": "^0.12.7",
         "redis": "^4.6.7",
-        "winston": "^3.9.0"
+        "winston": "^3.9.0",
+        "@faker-js/faker": "9.9.0"
     },
     "devDependencies": {
         "nodemon": "^3.0.1"

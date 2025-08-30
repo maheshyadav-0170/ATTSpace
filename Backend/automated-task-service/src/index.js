@@ -1,44 +1,67 @@
-require("dotenv").config({ path: require("path").resolve(__dirname, "../.env") });
-
+require("dotenv").config();
 const express = require("express");
+const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const helmet = require("helmet");
 const cors = require("cors");
+const helmet = require("helmet");
 const cron = require("node-cron");
 const logger = require("./utils/logger");
-const routes = require("./routes/automatedService");
 
-// Import cache function for cron
-const cacheAuthUsers = require("./cacheAuthUser");
+// Controllers
+const { employeeTaskController } = require("./controllers/employeeTaskController");
+const { authUserTaskController } = require("./controllers/authUserTaskController");
 
-const port = process.env.PORT || 4002;
+// Scripts
+const { generateFakeEmployees } = require("./automatedScripts/generateFakeEmployees");
+const { cacheAllAuthUsers } = require("./automatedScripts/cacheAuthUsers");
 
-async function start() {
+const mongoUrl = process.env.MONGO_URL;
+const PORT = process.env.PORT;
+
+async function startServer() {
   try {
+    await mongoose.connect(mongoUrl);
+    logger.info("Connected to MongoDB");
+
     const app = express();
+
+    // Middleware
     app.use(helmet());
     app.use(cors());
     app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({ extended: true }));
 
-    app.use("/automated-service", routes);
+    // Routes
+    app.post("/automated-task/manual-fake-employee-generation", employeeTaskController.triggerFakeEmployees);
+    app.post("/automated-task/manual-trigger-cache-authuser", authUserTaskController.triggerCache);
 
-    app.get("/", (req, res) =>
-      res.json({ service: "automated-task-service", status: "ok" })
+    // Cron Jobs
+    cron.schedule(
+      "0 0 1 * * *",
+      async () => {
+        logger.info("Cron job started: Generating Fake Employees at 2 AM IST.");
+        await generateFakeEmployees(100);
+      },
+      { timezone: "Asia/Kolkata" }
     );
 
-    app.listen(port, () =>
-      logger.info(`Automated Task Service running on port ${port}`)
+    cron.schedule(
+      "0 0 2 * * *",
+      async () => {
+        logger.info("Cron job started: Caching AuthUsers at 3 AM IST.");
+        await cacheAllAuthUsers();
+      },
+      { timezone: "Asia/Kolkata" }
     );
 
-    // Schedule cron job to run every day at 2 AM
-    cron.schedule("0 2 * * *", async () => {
-      logger.info("⏰ Running daily cache refresh job (2 AM)...");
-      await cacheAuthUsers();
+    // Start server
+    app.listen(PORT, () => {
+      logger.info(`Server running on port ${PORT}`);
     });
   } catch (err) {
-    logger.error("Error starting automated-task-service: " + err.toString());
+    logger.error("Failed to start server", err);
     process.exit(1);
   }
 }
 
-start();
+startServer();
