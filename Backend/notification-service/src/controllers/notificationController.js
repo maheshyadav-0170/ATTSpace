@@ -12,25 +12,49 @@ async function fetchNotifications(req, res) {
       });
     }
 
+    // Extract JWT from cookies
+    const token = req.cookies?.auth_token;
+    if (!token) {
+      return res.status(401).json({
+        success: false,
+        message: "Unauthorized: missing authentication token.",
+      });
+    }
+
+    // Verify token
+    const decoded = verify(token);
+    if (!decoded) {
+      return res.status(401).json({
+        success: false,
+        message: "Unauthorized: invalid or expired token.",
+      });
+    }
+
+    // Compare attuid in request body with attuid from token
+    if (decoded.attuid !== attuid) {
+      return res.status(403).json({
+        success: false,
+        message: "Forbidden: you can only access your own notifications.",
+      });
+    }
+
+    // Fetch notifications
     const notifications = await Notification.find({ attuid }).sort({ createdAt: -1 });
 
     if (notifications.length > 0) {
-      const ids = notifications.map((notification) => notification._id);
+      const ids = notifications.map((n) => n._id);
       await Notification.updateMany(
         { _id: { $in: ids }, status: "pending" },
         { $set: { status: "sent" } }
       );
-      return res.status(200).json({
-        success: true,
-        message: "Notifications retrieved successfully.",
-        data: notifications,
-      });
     }
 
     return res.status(200).json({
       success: true,
-      message: "No notifications found for the provided user ID.",
-      data: [],
+      message: notifications.length
+        ? "Notifications retrieved successfully."
+        : "No notifications found for the provided user ID.",
+      data: notifications,
     });
   } catch (error) {
     logger.error(`Error fetching notifications: ${error.message}`);

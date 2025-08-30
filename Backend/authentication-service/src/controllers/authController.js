@@ -190,7 +190,7 @@ async function login(req, res) {
     await resetFailedAttempts(attuid);
 
     // Step 5: Issue JWT token
-    const token = sign({ attuid, email: user.email });
+    const token = sign({ attuid, email: user.email, role: user.role });
 
     res.cookie("auth_token", token, {
       httpOnly: true,
