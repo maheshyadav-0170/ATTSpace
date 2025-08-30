@@ -11,6 +11,8 @@ const shifts = [
   "22:00-07:00"
 ];
 
+const roles = ["Administrator", "Manager", "RegularUser"];
+
 async function generateFakeEmployees(count = 100) {
   try {
     logger.info(`Flushing existing employees...`);
@@ -32,7 +34,8 @@ async function generateFakeEmployees(count = 100) {
         jobTitle: faker.person.jobTitle(),
         businessUnit: faker.company.name(),
         manager: managerAttuid,
-        shift: faker.helpers.arrayElement(shifts), // assign a realistic shift
+        shift: faker.helpers.arrayElement(shifts),
+        role: faker.helpers.arrayElement(roles)
       };
 
       fakeEmployees.push(employee);

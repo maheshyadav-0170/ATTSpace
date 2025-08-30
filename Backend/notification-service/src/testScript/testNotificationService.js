@@ -3,7 +3,7 @@ const amqplib = require("amqplib");
 
 async function run() {
   try {
-    const conn = await amqplib.connect("amqp://localhost"); // match docker setup if needed
+    const conn = await amqplib.connect("amqp://rabbitmq"); // match docker setup if needed
     const ch = await conn.createChannel();
     const queue = "send_notification";
 
@@ -22,7 +22,7 @@ async function run() {
       process.exit(0);
     }, 500);
   } catch (err) {
-    console.error("❌ Error sending notification:", err);
+    console.error("Error sending notification:", err);
   }
 }
 
