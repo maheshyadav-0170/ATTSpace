@@ -7,7 +7,8 @@ const EmployeeSchema = new mongoose.Schema({
     email: { type: String, required: true },
     jobTitle: { type: String, required: true },
     businessUnit: { type: String, required: true },
-    manager: { type: String, required: true }
+    manager: { type: String, required: true },
+    shift: { type: String, default: null }
 }, { collection: 'employees', timestamps: false });
 
 module.exports = mongoose.model('Employee', EmployeeSchema);

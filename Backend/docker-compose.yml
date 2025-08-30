@@ -79,6 +79,7 @@ services:
     depends_on:
       - mongo
       - redis
+      - rabbitmq
     ports:
       - "4002:4002"
     volumes:

@@ -4,10 +4,11 @@ const mongoose = require('mongoose');
 const helmet = require('helmet');
 const cors = require('cors');
 const authRoutes = require('./routes/auth');
-const { mongoUri, mongoDb, port } = require('./config');
+const { mongoUri, mongoDb, port, corsOrigin } = require('./config');
 const { initRedis } = require('./services/helperService');
 const { initRabbit } = require('./services/rabbitmqPublisher');
 const logger = require('./utils/logger');
+const cookieParser = require("cookie-parser");
 
 async function start() {
   try {
@@ -19,12 +20,21 @@ async function start() {
     await initRabbit();
 
     const app = express();
+    app.use(express.json());
+    app.use(cookieParser());
+    
+    // Allow frontend to talk to backend, with origin from env/config
+    app.use(cors({
+      origin: corsOrigin,
+      credentials: true   // allow cookies
+    }));
+    
     app.use(helmet());
-    app.use(cors());
+  
     app.use(bodyParser.json());
-
+    
     app.use('/auth', authRoutes);
-
+    
     app.get('/', (req, res) => res.json({ service: 'authentication-service', status: 'ok' }));
 
     app.listen(port, () => logger.info(`Auth service listening on port ${port}`));

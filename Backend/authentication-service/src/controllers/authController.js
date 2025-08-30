@@ -8,6 +8,27 @@ const { sign, verify } = require('../services/jwtService');
 const { bcryptSaltRounds, otpLength } = require('../config');
 const logger = require('../utils/logger');
 
+/* ==========================
+   Middleware for protection
+   ========================== */
+
+function authMiddleware(req, res, next) {
+  const token = req.cookies?.auth_token;
+  if (!token) {
+    logger.info("authMiddleware: No token found in cookies");
+    return res.status(401).json({ message: "Unauthorized: No token provided" });
+  }
+
+  try {
+    const decoded = verify(token);
+    req.user = decoded;
+    next();
+  } catch (err) {
+    logger.info("authMiddleware: Invalid or expired token");
+    return res.status(401).json({ message: "Unauthorized: Invalid or expired token" });
+  }
+}
+
 async function checkAttuid(req, res) {
   const { attuid } = req.body;
   if (!attuid || typeof attuid !== 'string') {
@@ -16,7 +37,7 @@ async function checkAttuid(req, res) {
   }
 
   try {
-    // Step 1: Check if employee exists
+        // Step 1: Check if employee exists
     const employee = await Employee.findOne({ attuid });
     if (!employee) {
       logger.info(`check-attuid: Employee not found for attuid: ${attuid}`);
@@ -31,7 +52,7 @@ async function checkAttuid(req, res) {
       return res.json({ next: 'password', message: 'A verified user account exists. Please provide your password to continue.' });
     }
 
-    // Step 3: No authuser — send OTP and start password creation
+        // Step 3: No authuser — send OTP and start password creation
     const otp = generateOtp();
     await setOtp(attuid, otp);
 
@@ -71,7 +92,7 @@ async function verifyOtp(req, res) {
 
     // OTP valid -> upsert authuser with isVerified=true
     await deleteOtp(attuid);
-    // Find employee details to copy to authusers
+        // Find employee details to copy to authusers
     const employee = await Employee.findOne({ attuid }).lean();
     if (!employee) {
       logger.error(`verify-otp: Employee not found for attuid: ${attuid}`);
@@ -85,7 +106,7 @@ async function verifyOtp(req, res) {
       lastModified: now
     };
 
-    const upsertRes = await AuthUser.findOneAndUpdate(
+    await AuthUser.findOneAndUpdate(
       { attuid },
       update,
       { upsert: true, new: true, setDefaultsOnInsert: true }
@@ -134,7 +155,7 @@ async function login(req, res) {
   }
 
   try {
-    // Step 1: Check rate limit
+        // Step 1: Check rate limit
     const rateLimitCheck = await checkRateLimit(attuid);
     if (rateLimitCheck.isBlocked) {
       logger.info(`login: Rate limit exceeded for attuid: ${attuid}`);
@@ -160,7 +181,7 @@ async function login(req, res) {
     const match = await bcrypt.compare(password, user.password);
     if (!match) {
       logger.info(`login: Invalid password for attuid: ${attuid}`);
-      // Increment failed attempt count
+            // Increment failed attempt count
       await incrementFailedAttempt(attuid);
       return res.status(401).json({ message: 'The provided credentials are incorrect. Please try again.' });
     }
@@ -170,8 +191,20 @@ async function login(req, res) {
 
     // Step 5: Issue JWT token
     const token = sign({ attuid, email: user.email });
+
+    res.cookie("auth_token", token, {
+      httpOnly: true,
+      // secure: process.env.NODE_ENV === "develop",
+      sameSite: "Strict",
+      maxAge: (process.env.JWT_EXPIRES_IN || 3600) * 1000
+    });
+
     logger.info(`login: Successful login for attuid: ${attuid}`);
-    return res.json({ token, expiresIn: process.env.JWT_EXPIRES_IN || 3600 });
+    return res.json({ 
+      message: "Login successful", 
+      expiresIn: process.env.JWT_EXPIRES_IN || 3600 
+    });
+
   } catch (err) {
     logger.error(`login: Error during login for attuid ${attuid}: ${err.toString()}`);
     return res.status(500).json({ message: 'An unexpected server error occurred during login. Please try again later.' });
@@ -179,21 +212,14 @@ async function login(req, res) {
 }
 
 async function logout(req, res) {
-  // Expect Authorization: Bearer <token>
-  const auth = req.headers.authorization;
-  if (!auth) {
-    logger.info(`logout: Missing Authorization header`);
-    return res.status(400).json({ message: 'An Authorization header with a valid token is required to log out.' });
-  }
-
-  const token = auth.split(' ')[1];
+  const token = req.cookies?.auth_token;
   if (!token) {
-    logger.info(`logout: Missing token in Authorization header`);
-    return res.status(400).json({ message: 'A valid token is required in the Authorization header.' });
+    logger.info(`logout: No token found in cookies`);
+    return res.status(400).json({ message: 'A valid token cookie is required to log out.' });
   }
 
   try {
-    // Verify token using jwtService (checks signature + expiration)
+        // Verify token using jwtService (checks signature + expiration)
     const decoded = verify(token);
     if (!decoded || !decoded.exp) {
       logger.info(`logout: Invalid or expired token provided`);
@@ -204,6 +230,7 @@ async function logout(req, res) {
     const alreadyBlacklisted = await isTokenBlacklisted(token);
     if (alreadyBlacklisted) {
       logger.info(`logout: Token already blacklisted for attuid: ${decoded.attuid}`);
+      res.clearCookie("auth_token");
       return res.status(200).json({ message: 'You have already been logged out.' });
     }
 
@@ -215,6 +242,7 @@ async function logout(req, res) {
       logger.info(`logout: Token blacklisted for ${ttl} seconds for attuid: ${decoded.attuid}`);
     }
 
+    res.clearCookie("auth_token");
     return res.json({ message: 'You have been successfully logged out.' });
   } catch (err) {
     logger.error(`logout: Error during logout for token ${token}: ${err.toString()}`);
@@ -222,4 +250,4 @@ async function logout(req, res) {
   }
 }
 
-module.exports = { checkAttuid, verifyOtp, setPassword, login, logout };
+module.exports = { checkAttuid, verifyOtp, setPassword, login, logout, authMiddleware };

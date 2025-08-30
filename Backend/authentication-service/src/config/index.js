@@ -14,5 +14,6 @@ module.exports = {
   otpTtl: process.env.OTP_TTL_SECONDS ? parseInt(process.env.OTP_TTL_SECONDS) : 300,
   otpLength: process.env.OTP_LENGTH ? parseInt(process.env.OTP_LENGTH) : 6,
   bcryptSaltRounds: process.env.BCRYPT_SALT_ROUNDS ? parseInt(process.env.BCRYPT_SALT_ROUNDS) : 10,
-  logDir: process.env.LOG_DIR || './logs'
+  logDir: process.env.LOG_DIR || './logs',
+  corsOrigin: process.env.CORS_ORIGIN || 'http://localhost:5173'
 };
