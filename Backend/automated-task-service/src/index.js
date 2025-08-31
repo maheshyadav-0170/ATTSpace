@@ -14,6 +14,7 @@ const { authUserTaskController } = require("./controllers/authUserTaskController
 // Scripts
 const { generateFakeEmployees } = require("./automatedScripts/generateFakeEmployees");
 const { cacheAllAuthUsers } = require("./automatedScripts/cacheAuthUsers");
+const { cacheAllEmployees } = require("./automatedScripts/cacheEmployees");
 
 const mongoUrl = process.env.MONGO_URL;
 const PORT = process.env.PORT;
@@ -33,6 +34,7 @@ async function startServer() {
 
     // Routes
     app.post("/automated-task/manual-fake-employee-generation", employeeTaskController.triggerFakeEmployees);
+    app.post("/automated-task/manual-trigger-cache-employee", employeeTaskController.triggerCacheEmployees);
     app.post("/automated-task/manual-trigger-cache-authuser", authUserTaskController.triggerCache);
 
     // Cron Jobs
@@ -41,6 +43,12 @@ async function startServer() {
       async () => {
         logger.info("Cron job started: Generating Fake Employees at 2 AM IST.");
         await generateFakeEmployees(100);
+
+        // Schedule caching 30 minutes after generation
+        setTimeout(async () => {
+          logger.info("Scheduled cache job: Caching Employees (30 min after generation).");
+          await cacheAllEmployees();
+        }, 30 * 60 * 1000); // 30 minutes in ms
       },
       { timezone: "Asia/Kolkata" }
     );

@@ -1,0 +1,24 @@
+2025-08-31T07:46:46.652Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:46:46.655Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:47.311Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:46:47.315Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:48.043Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:46:48.048Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:48.826Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:46:48.835Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:50.073Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:46:50.079Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:52.080Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:46:52.135Z [INFO] Notification API running on port 4001
+2025-08-31T07:59:44.942Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:59:44.947Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:45.640Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:59:45.643Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:46.347Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:59:46.352Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:47.177Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:59:47.180Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:48.346Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:59:48.353Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:50.342Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T07:59:50.404Z [INFO] Notification API running on port 4001

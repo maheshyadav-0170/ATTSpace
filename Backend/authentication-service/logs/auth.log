@@ -1,0 +1,46 @@
+2025-08-31T07:46:46.237Z [INFO] Starting authentication service...
+2025-08-31T07:46:46.760Z [INFO] Connected to MongoDB
+2025-08-31T07:46:46.771Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:47.523Z [INFO] Starting authentication service...
+2025-08-31T07:46:47.539Z [INFO] Connected to MongoDB
+2025-08-31T07:46:47.556Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:48.288Z [INFO] Starting authentication service...
+2025-08-31T07:46:48.304Z [INFO] Connected to MongoDB
+2025-08-31T07:46:48.312Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:49.207Z [INFO] Starting authentication service...
+2025-08-31T07:46:49.221Z [INFO] Connected to MongoDB
+2025-08-31T07:46:49.228Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:50.591Z [INFO] Starting authentication service...
+2025-08-31T07:46:50.617Z [INFO] Connected to MongoDB
+2025-08-31T07:46:50.633Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:52.722Z [INFO] Starting authentication service...
+2025-08-31T07:46:52.735Z [INFO] Connected to MongoDB
+2025-08-31T07:46:52.785Z [INFO] RabbitMQ publisher initialized
+2025-08-31T07:46:52.788Z [INFO] Auth service listening on port 4000
+2025-08-31T07:49:27.921Z [INFO] Reset failed login attempts for my2474
+2025-08-31T07:49:27.924Z [INFO] login: Successful login for attuid: my2474
+2025-08-31T07:49:49.862Z [ERROR] checkAttuid: Error processing attuid my2474: ReferenceError: redisClient is not defined
+2025-08-31T07:59:44.547Z [INFO] Starting authentication service...
+2025-08-31T07:59:44.567Z [INFO] Connected to MongoDB
+2025-08-31T07:59:44.576Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:45.494Z [INFO] Starting authentication service...
+2025-08-31T07:59:45.514Z [INFO] Connected to MongoDB
+2025-08-31T07:59:45.529Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:46.271Z [INFO] Starting authentication service...
+2025-08-31T07:59:46.294Z [INFO] Connected to MongoDB
+2025-08-31T07:59:46.306Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:47.193Z [INFO] Starting authentication service...
+2025-08-31T07:59:47.209Z [INFO] Connected to MongoDB
+2025-08-31T07:59:47.214Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:48.457Z [INFO] Starting authentication service...
+2025-08-31T07:59:48.473Z [INFO] Connected to MongoDB
+2025-08-31T07:59:48.483Z [ERROR] Failed to start service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:50.561Z [INFO] Starting authentication service...
+2025-08-31T07:59:50.579Z [INFO] Connected to MongoDB
+2025-08-31T07:59:50.634Z [INFO] RabbitMQ publisher initialized
+2025-08-31T07:59:50.637Z [INFO] Auth service listening on port 4000
+2025-08-31T08:00:15.262Z [INFO] check-attuid: Employee not found for attuid: my2474
+2025-08-31T08:01:05.838Z [INFO] check-attuid: Employee found in Redis cache for attuid: wgx5tm
+2025-08-31T08:01:05.849Z [INFO] Set OTP in Redis for wgx5tm (ttl 300s)
+2025-08-31T08:01:05.855Z [INFO] Published email job for attuid=wgx5tm email=seth_rice@gmail.com
+2025-08-31T08:01:05.855Z [INFO] check-attuid: OTP generated and sent to email for attuid: wgx5tm

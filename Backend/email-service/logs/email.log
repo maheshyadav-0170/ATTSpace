@@ -1,0 +1,11 @@
+2025-08-31T07:46:46.037Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:46.625Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:47.158Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:48.966Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:50.967Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T07:46:54.515Z [INFO] Email service started and listening for jobs
+2025-08-31T07:59:44.800Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:47.221Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:49.058Z [ERROR] Error starting email service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T07:59:52.570Z [INFO] Email service started and listening for jobs
+2025-08-31T08:01:10.054Z [INFO] Email sent to seth_rice@gmail.com for wgx5tm

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const Employee = require('../models/Employee');
 const AuthUser = require('../models/AuthUser');
-const { generateOtp, setOtp, getOtp, deleteOtp, blacklistToken, setRateLimit, jwtExpiresIn, MAX_LOGIN_ATTEMPTS, RATE_LIMIT_WINDOW, checkRateLimit, incrementFailedAttempt, resetFailedAttempts, isTokenBlacklisted } = require('../services/helperService');
+const { generateOtp, setOtp, getOtp, deleteOtp, blacklistToken, setRateLimit, jwtExpiresIn, MAX_LOGIN_ATTEMPTS, RATE_LIMIT_WINDOW, checkRateLimit, incrementFailedAttempt, resetFailedAttempts, isTokenBlacklisted, redisHost, redisPort, initRedis, redisClient } = require('../services/helperService');
 const { publishEmailJob } = require('../services/rabbitmqPublisher');
 const { sign, verify } = require('../services/jwtService');
 const { bcryptSaltRounds, otpLength } = require('../config');
@@ -30,49 +30,66 @@ const logger = require('../utils/logger');
       return res.status(401).json({ message: "Unauthorized: Invalid or expired token" });
     }
   }
-
-async function checkAttuid(req, res) {
-  const { attuid } = req.body;
-  if (!attuid || typeof attuid !== 'string') {
-    logger.info(`check-attuid: Invalid attuid input received: ${attuid}`);
-    return res.status(400).json({ message: 'The provided attuid is invalid. Please enter a valid attuid and try again.' });
-  }
-
-  try {
-        // Step 1: Check if employee exists
-    const employee = await Employee.findOne({ attuid });
-    if (!employee) {
-      logger.info(`check-attuid: Employee not found for attuid: ${attuid}`);
-      return res.status(404).json({ message: 'No employee record was found for the provided attuid. Please verify and try again.' });
+  
+  async function checkAttuid(req, res) {
+    const { attuid } = req.body;
+    if (!attuid || typeof attuid !== 'string') {
+      logger.info(`check-attuid: Invalid attuid input received: ${attuid}`);
+      return res.status(400).json({ message: 'The provided attuid is invalid. Please enter a valid attuid and try again.' });
     }
-
-    // Step 2: Check if authuser exists
-    const authData = await AuthUser.findOne({ attuid });
-
-    if (authData) {
-      logger.info(`check-attuid: Found verified user for attuid: ${attuid}`);
-      return res.json({ next: 'password', message: 'A verified user account exists. Please provide your password to continue.' });
+  
+    try {
+      await initRedis();
+  
+      // Step 1: Try to fetch employee from Redis
+      let employee = null;
+      const empKey = `employee:${attuid}`;
+      const cachedEmployee = await redisClient.get(empKey);
+  
+      if (cachedEmployee) {
+        employee = JSON.parse(cachedEmployee);
+        logger.info(`check-attuid: Employee found in Redis cache for attuid: ${attuid}`);
+      } else {
+        // Fallback: check in DB if not in Redis
+        employee = await Employee.findOne({ attuid }).lean();
+        if (employee) {
+          logger.info(`check-attuid: Employee fetched from MongoDB for attuid: ${attuid}`);
+          await redisClient.set(empKey, JSON.stringify(employee)); // Cache it for next time
+        }
+      }
+  
+      if (!employee) {
+        logger.info(`check-attuid: Employee not found for attuid: ${attuid}`);
+        return res.status(404).json({ message: 'No employee record was found for the provided attuid. Please verify and try again.' });
+      }
+  
+      // Step 2: Check if authuser exists (still from MongoDB, unless you also cache them)
+      const authData = await AuthUser.findOne({ attuid });
+  
+      if (authData) {
+        logger.info(`check-attuid: Found verified user for attuid: ${attuid}`);
+        return res.json({ next: 'password', message: 'A verified user account exists. Please provide your password to continue.' });
+      }
+  
+      // Step 3: No authuser — send OTP and start password creation
+      const otp = generateOtp();
+      await setOtp(attuid, otp);
+  
+      await publishEmailJob({
+        attuid,
+        email: employee.email,
+        otp,
+        reason: 'new_account'
+      });
+  
+      logger.info(`check-attuid: OTP generated and sent to email for attuid: ${attuid}`);
+      return res.json({ next: 'otp', message: 'A one-time password (OTP) has been sent to your registered company email address. Please check your inbox.' });
+  
+    } catch (err) {
+      logger.error(`checkAttuid: Error processing attuid ${attuid}: ${err.toString()}`);
+      return res.status(500).json({ message: 'An unexpected server error occurred. Please try again later or contact support.' });
     }
-
-        // Step 3: No authuser — send OTP and start password creation
-    const otp = generateOtp();
-    await setOtp(attuid, otp);
-
-    await publishEmailJob({
-      attuid,
-      email: employee.email,
-      otp,
-      reason: 'new_account'
-    });
-
-    logger.info(`check-attuid: OTP generated and sent to email for attuid: ${attuid}`);
-    return res.json({ next: 'otp', message: 'A one-time password (OTP) has been sent to your registered company email address. Please check your inbox.' });
-
-  } catch (err) {
-    logger.error(`checkAttuid: Error processing attuid ${attuid}: ${err.toString()}`);
-    return res.status(500).json({ message: 'An unexpected server error occurred. Please try again later or contact support.' });
-  }
-}
+  }  
 
 async function verifyOtp(req, res) {
   const { attuid, otp } = req.body;

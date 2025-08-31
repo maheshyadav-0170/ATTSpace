@@ -113,4 +113,4 @@ async function resetFailedAttempts(attuid) {
   }
 }
 
-module.exports = { generateOtp, setOtp, getOtp, deleteOtp, initRedis, blacklistToken, isTokenBlacklisted, setRateLimit, MAX_LOGIN_ATTEMPTS, RATE_LIMIT_WINDOW, checkRateLimit, incrementFailedAttempt, resetFailedAttempts };
+module.exports = { generateOtp, setOtp, getOtp, deleteOtp, initRedis, blacklistToken, isTokenBlacklisted, setRateLimit, MAX_LOGIN_ATTEMPTS, RATE_LIMIT_WINDOW, checkRateLimit, incrementFailedAttempt, resetFailedAttempts, redisClient };
