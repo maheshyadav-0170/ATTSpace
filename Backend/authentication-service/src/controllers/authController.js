@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const Employee = require('../models/Employee');
 const AuthUser = require('../models/AuthUser');
-const { generateOtp, setOtp, getOtp, deleteOtp, blacklistToken, setRateLimit, MAX_LOGIN_ATTEMPTS, RATE_LIMIT_WINDOW, checkRateLimit, incrementFailedAttempt, resetFailedAttempts, isTokenBlacklisted } = require('../services/helperService');
+const { generateOtp, setOtp, getOtp, deleteOtp, blacklistToken, setRateLimit, jwtExpiresIn, MAX_LOGIN_ATTEMPTS, RATE_LIMIT_WINDOW, checkRateLimit, incrementFailedAttempt, resetFailedAttempts, isTokenBlacklisted } = require('../services/helperService');
 const { publishEmailJob } = require('../services/rabbitmqPublisher');
 const { sign, verify } = require('../services/jwtService');
 const { bcryptSaltRounds, otpLength } = require('../config');
@@ -12,22 +12,24 @@ const logger = require('../utils/logger');
    Middleware for protection
    ========================== */
 
-function authMiddleware(req, res, next) {
-  const token = req.cookies?.auth_token;
-  if (!token) {
-    logger.info("authMiddleware: No token found in cookies");
-    return res.status(401).json({ message: "Unauthorized: No token provided" });
+   function authMiddleware(req, res, next) {
+    const authHeader = req.headers['authorization'];
+    const token = authHeader && authHeader.split(' ')[1]; // "Bearer <token>"
+  
+    if (!token) {
+      logger.info("authMiddleware: No token found in Authorization header");
+      return res.status(401).json({ message: "Unauthorized: No token provided" });
+    }
+  
+    try {
+      const decoded = verify(token);
+      req.user = decoded;
+      next();
+    } catch (err) {
+      logger.info("authMiddleware: Invalid or expired token");
+      return res.status(401).json({ message: "Unauthorized: Invalid or expired token" });
+    }
   }
-
-  try {
-    const decoded = verify(token);
-    req.user = decoded;
-    next();
-  } catch (err) {
-    logger.info("authMiddleware: Invalid or expired token");
-    return res.status(401).json({ message: "Unauthorized: Invalid or expired token" });
-  }
-}
 
 async function checkAttuid(req, res) {
   const { attuid } = req.body;
@@ -155,7 +157,7 @@ async function login(req, res) {
   }
 
   try {
-        // Step 1: Check rate limit
+    // Step 1: Check rate limit
     const rateLimitCheck = await checkRateLimit(attuid);
     if (rateLimitCheck.isBlocked) {
       logger.info(`login: Rate limit exceeded for attuid: ${attuid}`);
@@ -181,7 +183,7 @@ async function login(req, res) {
     const match = await bcrypt.compare(password, user.password);
     if (!match) {
       logger.info(`login: Invalid password for attuid: ${attuid}`);
-            // Increment failed attempt count
+      // Increment failed attempt count
       await incrementFailedAttempt(attuid);
       return res.status(401).json({ message: 'The provided credentials are incorrect. Please try again.' });
     }
@@ -192,17 +194,12 @@ async function login(req, res) {
     // Step 5: Issue JWT token
     const token = sign({ attuid, email: user.email, role: user.role });
 
-    res.cookie("auth_token", token, {
-      httpOnly: true,
-      // secure: process.env.NODE_ENV === "develop",
-      sameSite: "Strict",
-      maxAge: (process.env.JWT_EXPIRES_IN || 3600) * 1000
-    });
-
     logger.info(`login: Successful login for attuid: ${attuid}`);
-    return res.json({ 
-      message: "Login successful", 
-      expiresIn: process.env.JWT_EXPIRES_IN || 3600 
+    return res.json({
+      message: "Login successful",
+      accessToken: token,
+      tokenType: "Bearer",
+      expiresIn: jwtExpiresIn
     });
 
   } catch (err) {
@@ -212,14 +209,16 @@ async function login(req, res) {
 }
 
 async function logout(req, res) {
-  const token = req.cookies?.auth_token;
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1]; // "Bearer <token>"
+
   if (!token) {
-    logger.info(`logout: No token found in cookies`);
-    return res.status(400).json({ message: 'A valid token cookie is required to log out.' });
+    logger.info(`logout: No token found in Authorization header`);
+    return res.status(400).json({ message: 'A valid Bearer token is required to log out.' });
   }
 
   try {
-        // Verify token using jwtService (checks signature + expiration)
+    // Verify token (checks signature + expiration)
     const decoded = verify(token);
     if (!decoded || !decoded.exp) {
       logger.info(`logout: Invalid or expired token provided`);
@@ -230,11 +229,10 @@ async function logout(req, res) {
     const alreadyBlacklisted = await isTokenBlacklisted(token);
     if (alreadyBlacklisted) {
       logger.info(`logout: Token already blacklisted for attuid: ${decoded.attuid}`);
-      res.clearCookie("auth_token");
       return res.status(200).json({ message: 'You have already been logged out.' });
     }
 
-    // Calculate TTL and blacklist until expiry
+    // Blacklist until expiry
     const now = Math.floor(Date.now() / 1000);
     const ttl = decoded.exp - now;
     if (ttl > 0) {
@@ -242,7 +240,6 @@ async function logout(req, res) {
       logger.info(`logout: Token blacklisted for ${ttl} seconds for attuid: ${decoded.attuid}`);
     }
 
-    res.clearCookie("auth_token");
     return res.json({ message: 'You have been successfully logged out.' });
   } catch (err) {
     logger.error(`logout: Error during logout for token ${token}: ${err.toString()}`);

@@ -7,7 +7,7 @@ router.post('/check-attuid', controller.checkAttuid);
 router.post('/verify-otp', controller.verifyOtp);
 router.post('/set-password', controller.setPassword);
 router.post('/login', controller.login);
-router.post('/logout', controller.logout);
+router.post('/logout', controller.authMiddleware, controller.logout); // ✅ protected logout
 
 // Protected home route
 router.get('/home', controller.authMiddleware, (req, res) => {

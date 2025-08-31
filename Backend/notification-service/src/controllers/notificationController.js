@@ -1,5 +1,33 @@
 const Notification = require("../models/Notification");
 const logger = require("../utils/logger");
+const { verify } = require("../services/jwtService");
+
+// 🔐 Auth middleware (local to Notification service)
+async function authMiddleware(req, res, next) {
+  try {
+    // Extract JWT from cookie or Authorization header
+    const token =
+      req.cookies?.auth_token ||
+      (req.headers["authorization"] && req.headers["authorization"].split(" ")[1]);
+
+    if (!token) {
+      return res.status(401).json({ message: "Unauthorized: missing authentication token." });
+    }
+
+    // Verify JWT
+    const decoded = verify(token);
+    if (!decoded) {
+      return res.status(401).json({ message: "Unauthorized: invalid or expired token." });
+    }
+
+    // Attach user info for downstream handlers
+    req.user = decoded;
+    next();
+  } catch (err) {
+    logger.error(`Auth error: ${err.message}`);
+    return res.status(401).json({ message: "Unauthorized: invalid or expired token." });
+  }
+}
 
 // POST /notifications/fetch
 async function fetchNotifications(req, res) {
@@ -12,26 +40,8 @@ async function fetchNotifications(req, res) {
       });
     }
 
-    // Extract JWT from cookies
-    const token = req.cookies?.auth_token;
-    if (!token) {
-      return res.status(401).json({
-        success: false,
-        message: "Unauthorized: missing authentication token.",
-      });
-    }
-
-    // Verify token
-    const decoded = verify(token);
-    if (!decoded) {
-      return res.status(401).json({
-        success: false,
-        message: "Unauthorized: invalid or expired token.",
-      });
-    }
-
-    // Compare attuid in request body with attuid from token
-    if (decoded.attuid !== attuid) {
+    // Compare request attuid with token attuid
+    if (req.user.attuid !== attuid) {
       return res.status(403).json({
         success: false,
         message: "Forbidden: you can only access your own notifications.",
@@ -60,7 +70,8 @@ async function fetchNotifications(req, res) {
     logger.error(`Error fetching notifications: ${error.message}`);
     return res.status(500).json({
       success: false,
-      message: "An unexpected error occurred while retrieving notifications. Please try again later.",
+      message:
+        "An unexpected error occurred while retrieving notifications. Please try again later.",
     });
   }
 }
@@ -76,11 +87,7 @@ async function markRead(req, res) {
       });
     }
 
-    const notification = await Notification.findByIdAndUpdate(
-      id,
-      { read: true },
-      { new: true }
-    );
+    const notification = await Notification.findByIdAndUpdate(id, { read: true }, { new: true });
     if (!notification) {
       return res.status(404).json({
         success: false,
@@ -97,7 +104,8 @@ async function markRead(req, res) {
     logger.error(`Error marking notification as read: ${error.message}`);
     return res.status(500).json({
       success: false,
-      message: "An unexpected error occurred while marking the notification as read. Please try again later.",
+      message:
+        "An unexpected error occurred while marking the notification as read. Please try again later.",
     });
   }
 }
@@ -127,7 +135,8 @@ async function markAllRead(req, res) {
     logger.error(`Error marking all notifications as read: ${error.message}`);
     return res.status(500).json({
       success: false,
-      message: "An unexpected error occurred while marking all notifications as read. Please try again later.",
+      message:
+        "An unexpected error occurred while marking all notifications as read. Please try again later.",
     });
   }
 }
@@ -139,15 +148,12 @@ async function updateStatus(req, res) {
     if (!id || !["pending", "sent", "failed"].includes(status)) {
       return res.status(400).json({
         success: false,
-        message: "A valid notification ID and status (pending, sent, or failed) are required.",
+        message:
+          "A valid notification ID and status (pending, sent, or failed) are required.",
       });
     }
 
-    const notification = await Notification.findByIdAndUpdate(
-      id,
-      { status },
-      { new: true }
-    );
+    const notification = await Notification.findByIdAndUpdate(id, { status }, { new: true });
     if (!notification) {
       return res.status(404).json({
         success: false,
@@ -164,9 +170,10 @@ async function updateStatus(req, res) {
     logger.error(`Error updating notification status: ${error.message}`);
     return res.status(500).json({
       success: false,
-      message: "An unexpected error occurred while updating the notification status. Please try again later.",
+      message:
+        "An unexpected error occurred while updating the notification status. Please try again later.",
     });
   }
 }
 
-module.exports = { fetchNotifications, markRead, markAllRead, updateStatus };
+module.exports = { authMiddleware, fetchNotifications, markRead, markAllRead, updateStatus };
