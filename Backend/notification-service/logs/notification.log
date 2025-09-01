@@ -22,3 +22,210 @@
 2025-08-31T07:59:48.353Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
 2025-08-31T07:59:50.342Z [INFO] Connected to MongoDB (notification-service)
 2025-08-31T07:59:50.404Z [INFO] Notification API running on port 4001
+2025-08-31T08:10:56.445Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:10:56.448Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T08:10:57.092Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:10:57.111Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T08:10:57.842Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:10:57.846Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T08:10:58.626Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:10:58.632Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T08:10:59.789Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:10:59.795Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T08:11:01.757Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:11:01.813Z [INFO] Notification API running on port 4001
+2025-08-31T08:23:18.031Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:23:18.035Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T08:23:18.623Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:23:18.629Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T08:23:19.251Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:23:20.058Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:23:20.061Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T08:23:21.584Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:23:21.589Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-08-31T08:23:23.595Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:23:23.649Z [INFO] Notification API running on port 4001
+2025-08-31T08:25:03.228Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:25:03.231Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T08:25:03.858Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:25:03.861Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T08:25:04.443Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:25:04.448Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T08:25:05.214Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:25:05.222Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T08:25:06.374Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:25:06.379Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-08-31T08:25:08.342Z [INFO] Connected to MongoDB (notification-service)
+2025-08-31T08:25:08.399Z [INFO] Notification API running on port 4001
+2025-08-31T08:27:22.781Z [ERROR] Auth error: jwt malformed
+2025-08-31T08:27:25.803Z [ERROR] Auth error: jwt malformed
+2025-09-01T05:55:26.715Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T05:55:26.726Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-09-01T05:55:27.267Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T05:55:27.273Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-09-01T05:55:27.816Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T05:55:27.821Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-09-01T05:55:28.587Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T05:55:28.591Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-09-01T05:55:29.761Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T05:55:29.764Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.8:5672
+2025-09-01T05:55:31.787Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T05:55:31.841Z [INFO] Notification API running on port 4001
+2025-09-01T06:09:36.413Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:09:36.473Z [INFO] Notification API running on port 4001
+2025-09-01T06:10:51.151Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:10:51.158Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:10:51.840Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:10:51.846Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:10:52.468Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:10:52.473Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:10:53.220Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:10:53.224Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:10:54.372Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:10:54.377Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:10:56.328Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:10:56.380Z [INFO] Notification API running on port 4001
+2025-09-01T06:11:33.146Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:11:33.157Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:11:33.814Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:11:33.822Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:11:34.456Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:11:34.461Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:11:35.214Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:11:35.219Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:11:36.356Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:11:36.359Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:11:38.301Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:11:38.351Z [INFO] Notification API running on port 4001
+2025-09-01T06:12:35.618Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:12:35.622Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:12:36.136Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:12:36.142Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:12:36.724Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:12:36.731Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:12:37.569Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:12:37.576Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:12:38.769Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:12:38.772Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:12:40.724Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:12:40.778Z [INFO] Notification API running on port 4001
+2025-09-01T06:17:00.977Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:00.980Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:17:01.511Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:01.516Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:17:02.088Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:02.093Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:17:02.829Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:02.833Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:17:03.976Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:03.981Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:17:05.902Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:05.954Z [INFO] Notification API running on port 4001
+2025-09-01T06:17:53.105Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:53.111Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:17:53.730Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:53.733Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:17:54.284Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:54.290Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:17:55.098Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:55.103Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:17:56.282Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:56.287Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:17:58.243Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:17:58.293Z [INFO] Notification API running on port 4001
+2025-09-01T06:18:58.108Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:18:58.116Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:18:58.619Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:18:58.624Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:18:59.229Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:18:59.237Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:18:59.984Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:18:59.988Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:19:01.155Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:19:01.160Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:19:03.099Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:19:03.152Z [INFO] Notification API running on port 4001
+2025-09-01T06:31:16.281Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:31:16.290Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:31:16.840Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:31:16.845Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:31:17.430Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:31:17.435Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:31:18.195Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:31:18.199Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:31:19.332Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:31:19.338Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:31:21.266Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:31:21.319Z [INFO] Notification API running on port 4001
+2025-09-01T06:32:09.519Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:32:09.523Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:32:10.044Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:32:10.051Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:32:10.635Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:32:10.640Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:32:11.379Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:32:11.384Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:32:12.533Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:32:12.538Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:32:17.716Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:32:17.727Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:32:21.369Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:32:21.422Z [INFO] Notification API running on port 4001
+2025-09-01T06:33:40.401Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:33:40.450Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:33:44.132Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:33:44.155Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:33:46.097Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:33:46.118Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:33:48.231Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:33:48.239Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:33:50.811Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:33:50.842Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:33:53.595Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:33:53.610Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:33:57.640Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:33:57.711Z [INFO] Notification API running on port 4001
+2025-09-01T06:34:39.186Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:34:39.199Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:34:43.826Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:34:47.720Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:34:47.755Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:34:51.877Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:34:55.549Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:34:55.612Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:35:00.183Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:35:00.199Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:35:04.871Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:35:04.886Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.4:5672
+2025-09-01T06:35:11.910Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:35:11.967Z [INFO] Notification API running on port 4001
+2025-09-01T06:36:23.916Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:36:23.929Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:36:24.521Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:36:24.526Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:36:25.123Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:36:25.130Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:36:25.845Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:36:25.849Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:36:28.703Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:36:29.186Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:36:32.221Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:36:32.230Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.3:5672
+2025-09-01T06:36:36.238Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:36:36.304Z [INFO] Notification API running on port 4001
+2025-09-01T06:37:16.630Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:37:16.674Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:37:21.718Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:37:21.761Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:37:25.476Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:37:25.559Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:37:29.386Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:37:29.429Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:37:32.807Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:37:32.823Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:37:37.067Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:37:37.095Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:37:43.142Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:37:43.158Z [ERROR] Error starting notification service: Error: connect ECONNREFUSED 172.18.0.2:5672
+2025-09-01T06:37:51.051Z [INFO] Connected to MongoDB (notification-service)
+2025-09-01T06:37:51.150Z [INFO] Notification API running on port 4001

@@ -79,12 +79,25 @@ services:
     depends_on:
       - mongo
       - redis
-      - rabbitmq
     ports:
       - "4002:4002"
     volumes:
       - ./automated-task-service/logs:/app/logs
     restart: always
+
+  profile-service:
+    build: ./profile-service
+    container_name: profile-service
+    env_file:
+      - ./profile-service/.env
+    depends_on:
+      - redis
+    ports:
+      - "4003:4003"
+    volumes:
+      - ./profile-service/logs:/app/logs
+    restart: always
+
 
 volumes:
   mongo_data:

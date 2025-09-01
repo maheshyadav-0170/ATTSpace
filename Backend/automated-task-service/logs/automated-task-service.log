@@ -108,3 +108,143 @@
 2025-08-31T07:49:06.747Z [INFO] Redis connection closed
 2025-08-31T07:59:44.677Z [INFO] Connected to MongoDB
 2025-08-31T07:59:44.697Z [INFO] Server running on port 4002
+2025-08-31T08:10:56.266Z [INFO] Connected to MongoDB
+2025-08-31T08:10:56.293Z [INFO] Server running on port 4002
+2025-08-31T08:13:00.442Z [INFO] Manual trigger for caching Employees received.
+2025-08-31T08:13:00.450Z [INFO] Connected to Redis at redis:6379
+2025-08-31T08:13:00.451Z [INFO] Starting to cache Employees in Redis...
+2025-08-31T08:13:00.471Z [INFO] Cached all 100 Employees under key: all_employees
+2025-08-31T08:13:00.471Z [INFO] Cached individual Employee: employee:wgx5tm
+2025-08-31T08:13:00.472Z [INFO] Cached individual Employee: employee:d5jktp
+2025-08-31T08:13:00.473Z [INFO] Cached individual Employee: employee:vcybrx
+2025-08-31T08:13:00.473Z [INFO] Cached individual Employee: employee:7aqyhz
+2025-08-31T08:13:00.474Z [INFO] Cached individual Employee: employee:qy17hr
+2025-08-31T08:13:00.474Z [INFO] Cached individual Employee: employee:c0n1se
+2025-08-31T08:13:00.474Z [INFO] Cached individual Employee: employee:xbaqbl
+2025-08-31T08:13:00.475Z [INFO] Cached individual Employee: employee:rdgznn
+2025-08-31T08:13:00.475Z [INFO] Cached individual Employee: employee:l5cgrz
+2025-08-31T08:13:00.476Z [INFO] Cached individual Employee: employee:fmsibi
+2025-08-31T08:13:00.476Z [INFO] Cached individual Employee: employee:nkxn6d
+2025-08-31T08:13:00.476Z [INFO] Cached individual Employee: employee:xarpev
+2025-08-31T08:13:00.477Z [INFO] Cached individual Employee: employee:d6ashu
+2025-08-31T08:13:00.478Z [INFO] Cached individual Employee: employee:etjakz
+2025-08-31T08:13:00.478Z [INFO] Cached individual Employee: employee:rvb7ot
+2025-08-31T08:13:00.479Z [INFO] Cached individual Employee: employee:6mu1oq
+2025-08-31T08:13:00.479Z [INFO] Cached individual Employee: employee:ecbuii
+2025-08-31T08:13:00.480Z [INFO] Cached individual Employee: employee:ahch7r
+2025-08-31T08:13:00.480Z [INFO] Cached individual Employee: employee:mhgyhu
+2025-08-31T08:13:00.480Z [INFO] Cached individual Employee: employee:exzer2
+2025-08-31T08:13:00.480Z [INFO] Cached individual Employee: employee:37qy0c
+2025-08-31T08:13:00.480Z [INFO] Cached individual Employee: employee:t4yf4d
+2025-08-31T08:13:00.481Z [INFO] Cached individual Employee: employee:2qj1ua
+2025-08-31T08:13:00.481Z [INFO] Cached individual Employee: employee:dn25dw
+2025-08-31T08:13:00.482Z [INFO] Cached individual Employee: employee:vygihw
+2025-08-31T08:13:00.482Z [INFO] Cached individual Employee: employee:ayo0ek
+2025-08-31T08:13:00.482Z [INFO] Cached individual Employee: employee:hlmbgc
+2025-08-31T08:13:00.482Z [INFO] Cached individual Employee: employee:rt0d24
+2025-08-31T08:13:00.483Z [INFO] Cached individual Employee: employee:8hcl9u
+2025-08-31T08:13:00.483Z [INFO] Cached individual Employee: employee:1wazdg
+2025-08-31T08:13:00.483Z [INFO] Cached individual Employee: employee:ksf5oc
+2025-08-31T08:13:00.483Z [INFO] Cached individual Employee: employee:f8qpvt
+2025-08-31T08:13:00.484Z [INFO] Cached individual Employee: employee:dvztob
+2025-08-31T08:13:00.484Z [INFO] Cached individual Employee: employee:zfisd3
+2025-08-31T08:13:00.484Z [INFO] Cached individual Employee: employee:i5jlny
+2025-08-31T08:13:00.484Z [INFO] Cached individual Employee: employee:7f1vox
+2025-08-31T08:13:00.485Z [INFO] Cached individual Employee: employee:faissa
+2025-08-31T08:13:00.485Z [INFO] Cached individual Employee: employee:ztqc8h
+2025-08-31T08:13:00.485Z [INFO] Cached individual Employee: employee:ljllh7
+2025-08-31T08:13:00.485Z [INFO] Cached individual Employee: employee:k2noli
+2025-08-31T08:13:00.485Z [INFO] Cached individual Employee: employee:o1fr0i
+2025-08-31T08:13:00.486Z [INFO] Cached individual Employee: employee:nscplf
+2025-08-31T08:13:00.486Z [INFO] Cached individual Employee: employee:q3vm78
+2025-08-31T08:13:00.486Z [INFO] Cached individual Employee: employee:evl7qw
+2025-08-31T08:13:00.486Z [INFO] Cached individual Employee: employee:mvdgxo
+2025-08-31T08:13:00.487Z [INFO] Cached individual Employee: employee:l2vztd
+2025-08-31T08:13:00.487Z [INFO] Cached individual Employee: employee:a0y7yw
+2025-08-31T08:13:00.487Z [INFO] Cached individual Employee: employee:jzqcom
+2025-08-31T08:13:00.488Z [INFO] Cached individual Employee: employee:or4muh
+2025-08-31T08:13:00.488Z [INFO] Cached individual Employee: employee:jaqey3
+2025-08-31T08:13:00.488Z [INFO] Cached individual Employee: employee:meqrcn
+2025-08-31T08:13:00.488Z [INFO] Cached individual Employee: employee:wgwpf4
+2025-08-31T08:13:00.488Z [INFO] Cached individual Employee: employee:rdg94w
+2025-08-31T08:13:00.489Z [INFO] Cached individual Employee: employee:ycvli8
+2025-08-31T08:13:00.489Z [INFO] Cached individual Employee: employee:qrjlnk
+2025-08-31T08:13:00.489Z [INFO] Cached individual Employee: employee:n9iopr
+2025-08-31T08:13:00.489Z [INFO] Cached individual Employee: employee:vlc0ub
+2025-08-31T08:13:00.489Z [INFO] Cached individual Employee: employee:k2onvk
+2025-08-31T08:13:00.490Z [INFO] Cached individual Employee: employee:tl80xy
+2025-08-31T08:13:00.490Z [INFO] Cached individual Employee: employee:8z437w
+2025-08-31T08:13:00.490Z [INFO] Cached individual Employee: employee:8aimzp
+2025-08-31T08:13:00.490Z [INFO] Cached individual Employee: employee:n8updn
+2025-08-31T08:13:00.490Z [INFO] Cached individual Employee: employee:lukymf
+2025-08-31T08:13:00.490Z [INFO] Cached individual Employee: employee:a4yppq
+2025-08-31T08:13:00.491Z [INFO] Cached individual Employee: employee:r0w7hv
+2025-08-31T08:13:00.491Z [INFO] Cached individual Employee: employee:hxkank
+2025-08-31T08:13:00.491Z [INFO] Cached individual Employee: employee:wqz6k4
+2025-08-31T08:13:00.491Z [INFO] Cached individual Employee: employee:hzrgyf
+2025-08-31T08:13:00.491Z [INFO] Cached individual Employee: employee:3qkm7k
+2025-08-31T08:13:00.492Z [INFO] Cached individual Employee: employee:qubmpc
+2025-08-31T08:13:00.492Z [INFO] Cached individual Employee: employee:cpnmjq
+2025-08-31T08:13:00.492Z [INFO] Cached individual Employee: employee:ek3q6b
+2025-08-31T08:13:00.492Z [INFO] Cached individual Employee: employee:0qp1nx
+2025-08-31T08:13:00.493Z [INFO] Cached individual Employee: employee:cqvp8w
+2025-08-31T08:13:00.493Z [INFO] Cached individual Employee: employee:8ypa8b
+2025-08-31T08:13:00.494Z [INFO] Cached individual Employee: employee:1umh8r
+2025-08-31T08:13:00.494Z [INFO] Cached individual Employee: employee:j5ycku
+2025-08-31T08:13:00.494Z [INFO] Cached individual Employee: employee:iysqnu
+2025-08-31T08:13:00.495Z [INFO] Cached individual Employee: employee:v724rw
+2025-08-31T08:13:00.495Z [INFO] Cached individual Employee: employee:v80gpg
+2025-08-31T08:13:00.495Z [INFO] Cached individual Employee: employee:ukyroi
+2025-08-31T08:13:00.496Z [INFO] Cached individual Employee: employee:cck9lb
+2025-08-31T08:13:00.496Z [INFO] Cached individual Employee: employee:j1eaak
+2025-08-31T08:13:00.497Z [INFO] Cached individual Employee: employee:re0thc
+2025-08-31T08:13:00.497Z [INFO] Cached individual Employee: employee:eh2y4w
+2025-08-31T08:13:00.497Z [INFO] Cached individual Employee: employee:jmrkaj
+2025-08-31T08:13:00.497Z [INFO] Cached individual Employee: employee:ypyrsy
+2025-08-31T08:13:00.497Z [INFO] Cached individual Employee: employee:wzbso9
+2025-08-31T08:13:00.498Z [INFO] Cached individual Employee: employee:yp9zq0
+2025-08-31T08:13:00.498Z [INFO] Cached individual Employee: employee:iyvtcw
+2025-08-31T08:13:00.498Z [INFO] Cached individual Employee: employee:kraok1
+2025-08-31T08:13:00.498Z [INFO] Cached individual Employee: employee:apx7ta
+2025-08-31T08:13:00.498Z [INFO] Cached individual Employee: employee:r3jxe8
+2025-08-31T08:13:00.498Z [INFO] Cached individual Employee: employee:ufqnpw
+2025-08-31T08:13:00.499Z [INFO] Cached individual Employee: employee:z54ol3
+2025-08-31T08:13:00.499Z [INFO] Cached individual Employee: employee:b4yrrv
+2025-08-31T08:13:00.499Z [INFO] Cached individual Employee: employee:4jxo52
+2025-08-31T08:13:00.499Z [INFO] Cached individual Employee: employee:uxupfj
+2025-08-31T08:13:00.499Z [INFO] Cached individual Employee: employee:l9zsno
+2025-08-31T08:13:00.500Z [INFO] Cached individual Employee: employee:lr9kp5
+2025-08-31T08:13:00.500Z [INFO] Employees caching completed successfully.
+2025-08-31T08:13:00.500Z [INFO] Redis connection closed
+2025-08-31T08:23:17.814Z [INFO] Connected to MongoDB
+2025-08-31T08:23:17.848Z [INFO] Server running on port 4002
+2025-08-31T08:25:02.923Z [INFO] Connected to MongoDB
+2025-08-31T08:25:02.966Z [INFO] Server running on port 4002
+2025-09-01T05:55:26.724Z [INFO] Connected to MongoDB
+2025-09-01T05:55:26.760Z [INFO] Server running on port 4002
+2025-09-01T06:09:36.470Z [INFO] Connected to MongoDB
+2025-09-01T06:09:36.493Z [INFO] Server running on port 4002
+2025-09-01T06:10:51.198Z [INFO] Connected to MongoDB
+2025-09-01T06:10:51.245Z [INFO] Server running on port 4002
+2025-09-01T06:11:33.214Z [INFO] Connected to MongoDB
+2025-09-01T06:11:33.235Z [INFO] Server running on port 4002
+2025-09-01T06:12:35.664Z [INFO] Connected to MongoDB
+2025-09-01T06:12:35.691Z [INFO] Server running on port 4002
+2025-09-01T06:17:00.639Z [INFO] Connected to MongoDB
+2025-09-01T06:17:00.667Z [INFO] Server running on port 4002
+2025-09-01T06:17:53.125Z [INFO] Connected to MongoDB
+2025-09-01T06:17:53.158Z [INFO] Server running on port 4002
+2025-09-01T06:18:58.531Z [INFO] Connected to MongoDB
+2025-09-01T06:18:58.549Z [INFO] Server running on port 4002
+2025-09-01T06:31:16.287Z [INFO] Connected to MongoDB
+2025-09-01T06:31:16.314Z [INFO] Server running on port 4002
+2025-09-01T06:32:09.503Z [INFO] Connected to MongoDB
+2025-09-01T06:32:09.543Z [INFO] Server running on port 4002
+2025-09-01T06:33:39.755Z [INFO] Connected to MongoDB
+2025-09-01T06:33:40.065Z [INFO] Server running on port 4002
+2025-09-01T06:34:39.502Z [INFO] Connected to MongoDB
+2025-09-01T06:34:39.791Z [INFO] Server running on port 4002
+2025-09-01T06:36:23.998Z [INFO] Connected to MongoDB
+2025-09-01T06:36:24.022Z [INFO] Server running on port 4002
+2025-09-01T06:37:16.612Z [INFO] Connected to MongoDB
+2025-09-01T06:37:16.805Z [INFO] Server running on port 4002
