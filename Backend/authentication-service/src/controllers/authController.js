@@ -159,6 +159,16 @@ async function setPassword(req, res) {
     user.lastModified = new Date();
     await user.save();
     logger.info(`set-password: Password successfully set for attuid: ${attuid}`);
+
+    // Cache user data in Redis
+    try {
+      const userKey = `authuser:${user.attuid}`;
+      await redisClient.set(userKey, JSON.stringify(user));
+      logger.info(`Cached individual AuthUser: ${userKey}`);
+    } catch (cacheErr) {
+      logger.warn(`set-password: Failed to cache user for attuid ${attuid}: ${cacheErr.toString()}`);
+    }
+
     return res.json({ message: 'Your password has been successfully set. You can now log in with your credentials.' });
   } catch (err) {
     logger.error(`set-password: Error setting password for attuid ${attuid}: ${err.toString()}`);
