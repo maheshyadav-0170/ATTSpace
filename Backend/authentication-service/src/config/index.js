@@ -10,7 +10,7 @@ module.exports = {
   redisPort: process.env.REDIS_PORT ? parseInt(process.env.REDIS_PORT) : 6379,
   rabbitmqUrl: process.env.RABBITMQ_URL || 'amqp://rabbitmq',
   jwtSecret: process.env.JWT_SECRET || 'team404squadMALM',
-  jwtExpiresIn: process.env.JWT_EXPIRES_IN ? parseInt(process.env.JWT_EXPIRES_IN) : 3600,
+  jwtExpiresIn: process.env.JWT_EXPIRES_IN ? parseInt(process.env.JWT_EXPIRES_IN) : 36000000,
   otpTtl: process.env.OTP_TTL_SECONDS ? parseInt(process.env.OTP_TTL_SECONDS) : 300,
   otpLength: process.env.OTP_LENGTH ? parseInt(process.env.OTP_LENGTH) : 6,
   bcryptSaltRounds: process.env.BCRYPT_SALT_ROUNDS ? parseInt(process.env.BCRYPT_SALT_ROUNDS) : 10,

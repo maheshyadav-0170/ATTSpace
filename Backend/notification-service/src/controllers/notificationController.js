@@ -1,6 +1,7 @@
 const Notification = require("../models/Notification");
 const logger = require("../utils/logger");
 const { verify } = require("../services/jwtService");
+const { isTokenBlacklisted } = require("../services/helperService");
 
 // 🔐 Auth middleware (local to Notification service)
 async function authMiddleware(req, res, next) {
@@ -12,6 +13,12 @@ async function authMiddleware(req, res, next) {
 
     if (!token) {
       return res.status(401).json({ message: "Unauthorized: missing authentication token." });
+    }
+
+    // Check if token is blacklisted
+    const blacklisted = await isTokenBlacklisted(token);
+    if (blacklisted) {
+      return res.status(401).json({ message: "Unauthorized: token has been revoked." });
     }
 
     // Verify JWT

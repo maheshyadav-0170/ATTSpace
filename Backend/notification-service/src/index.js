@@ -6,6 +6,7 @@ const logger = require("./utils/logger");
 const notificationRoutes = require("./routes/notification");
 const Notification = require("./models/Notification");
 const config = require("./config");
+const cors = require("cors");
 
 const rabbitUrl = config.rabbitmqUrl;
 const mongoUrl = config.mongoUri;
@@ -39,15 +40,27 @@ async function start() {
         const { attuid, title, body } = job;
 
         try {
-          const notif = new Notification({ attuid, title, body, status: "pending", read: false });
+          const notif = new Notification({
+            attuid,
+            title,
+            body,
+            status: "pending",
+            read: false,
+          });
           await notif.save();
-          
 
-          logger.info(`Notification stored for ${attuid || "anonymous"}: ${title}`);
+          logger.info(
+            `Notification stored for ${attuid || "anonymous"}: ${title}`
+          );
           channel.ack(msg);
         } catch (err) {
           logger.error(`Failed to store notification: ${err.toString()}`);
-          const failedNotif = new Notification({ attuid, title, body, status: "failed" });
+          const failedNotif = new Notification({
+            attuid,
+            title,
+            body,
+            status: "failed",
+          });
           await failedNotif.save();
           channel.ack(msg);
         }
@@ -58,6 +71,15 @@ async function start() {
     // Setup Express
     const app = express();
     app.use(bodyParser.json());
+
+    // Enable CORS for frontend (port 5173)
+    app.use(
+      cors({
+        origin: "http://localhost:5173", // Replace with actual frontend URL if different
+        methods: ["GET", "POST", "PUT", "DELETE"],
+        credentials: true,
+      })
+    );
 
     // Mount routes
     app.use("/notifications", notificationRoutes);
