@@ -98,6 +98,18 @@ services:
       - ./profile-service/logs:/app/logs
     restart: always
 
+  play-arena-service:
+    build: ./play-arena-service
+    container_name: play-arena-service
+    env_file:
+      - ./play-arena-service/.env
+    depends_on:
+      - redis
+    ports:
+      - "4004:4004"
+    volumes:
+      - ./play-arena-service/logs:/app/logs
+    restart: always
 
 volumes:
   mongo_data:
