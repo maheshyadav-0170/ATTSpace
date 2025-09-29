@@ -25,10 +25,14 @@ async function start() {
     app.use(express.json());
     app.use(cookieParser());
 
-    app.use(cors({
-      origin: corsOrigin,
-      credentials: true
-    }));
+    // Enable CORS for frontend (port 5173)
+    app.use(
+      cors({
+        origin: "http://localhost:5173", // Replace with actual frontend URL if different
+        methods: ["GET", "POST", "PUT", "DELETE"],
+        credentials: true,
+      })
+    );
 
     app.use(helmet());
     app.use(bodyParser.json());

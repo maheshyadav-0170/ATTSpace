@@ -20,4 +20,16 @@ async function publishEmailJob(payload) {
   logger.info(`Published email job for attuid=${payload.attuid} email=${payload.email}`);
 }
 
-module.exports = { initRabbit, publishEmailJob };
+async function publishNotification(message) {
+  try {
+    await initRabbit();
+    const msgBuffer = Buffer.from(JSON.stringify(message));
+    await channel.sendToQueue('send_notification', msgBuffer, { persistent: true });
+    logger.info(`Notification published: ${JSON.stringify(message)}`);
+  } catch (err) {
+    logger.error(`publishNotification error: ${err.message}`);
+    throw err;
+  }
+}
+
+module.exports = { initRabbit, publishEmailJob, publishNotification };
